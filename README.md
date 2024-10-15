@@ -18,8 +18,7 @@
 
 <h2 id="sobre-los-proyectos">Sobre los proyectos</h2>
 <p>Estos proyectos se realizan para el primer modulo de Programacion orientada a objetos. de <code> I Edición del Máster en Big Data, Inteligencia Artificial e Ingeniería de Datos </code> de la UMA </p>
-[![I Edición del Máster en Big Data, Inteligencia Artificial e Ingeniería de Datos][imagen_master]
-](https://www.bigdata.uma.es/wp-content/uploads/2022/05/Logo-2022-ok-web-290.png)
+[![Uma master][imagen_master]](https://www.bigdata.uma.es)
 <h3 id="proyecto1punto">Proyecto1Punto</h3>
 <p>Algunos ejemplos que hicimos en clase. Posee una clase Punto básica y su implementación</p>
 
@@ -42,6 +41,8 @@
 <h3 id="proyectourna">ProyectoUrna</h3>
 <p>Típico problema en el que se tiene una urna y se pueden añadir bolas y obtener de forma aleatoria una de las bolas</p>
 
+
+[imagen_master]:https://www.bigdata.uma.es/wp-content/uploads/2022/05/Logo-2022-ok-web-290.png
 
 
 
