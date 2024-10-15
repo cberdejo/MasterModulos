@@ -11,7 +11,7 @@ public class Jarra {
      * @throws IllegalArgumentException en caso de que la capacidad inicial sea negativa
      */
     public Jarra(int capacidad) {
-        if (capacidad < 0) throw new IllegalArgumentException("capacidad negativa");
+        if (capacidad < 0) throw new IllegalArgumentException("capacidad negativa: " + capacidad);
 
         this.capacidad = capacidad;
         this.contenido = 0;
@@ -50,7 +50,12 @@ public class Jarra {
     /**
      * Llena  <code>this</code> hasta su capacidad con el contenido de
      * la jarra <code>jarra</code>.
-     *
+     * <ul>
+     *      <li>Si el contenido de <code>jarra</code> es mayor o igual que el espacio disponible de <code>this</code>
+     *      el contenido será igual a la capcidad .
+     *      </li>
+     *      <li>En cualquier otro caso el contenido de <code>this</code> es igual su contenido + el contenido de <code>jarra</code>
+     * </ul>
      * @param jarra jarra de la que se extrae el contenido
      * @throws IllegalArgumentException en caso de que se intente llenar una jarra consigo misma
      */
