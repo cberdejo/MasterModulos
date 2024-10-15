@@ -49,6 +49,9 @@ public class Urna {
     }
 
     /// Quita una bola de `this` al azar.
+    /// - En caso de solo tener bolas negras devuelve una bola negra
+    /// - En caso de tener solo bolas blancas devuelve una bola blanca
+    /// - En cualquier otro caso devuelve una bola al azar
     /// @return el color de la bola obtenida con un el `enum ColorBola {Blanca,Negra}`
     /// @throw IllegalStateException en caso de que no queden bolas
     public ColorBola quitarBolaAlAzar(){
@@ -78,7 +81,7 @@ public class Urna {
 
     @Override
     public String toString() {
-        return "Bolas negras:" + bolasNegras + " \n bolas blancas: " + bolasBlancas +"\n";
+        return "U(B: "+ bolasBlancas + ", N: "+ bolasNegras;
     }
 
 }
