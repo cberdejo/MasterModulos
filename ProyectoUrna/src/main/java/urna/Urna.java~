@@ -49,7 +49,7 @@ public class Urna {
     }
 
     /// Quita una bola de `this` al azar.
-    /// @return el color de la bola obtenida con un el `enum ColorBola {Blanca,Negra}`
+    /// @return el color de la bola obtenida con un el ´enum ColorBola {Blanca,Negra}´
     /// @throw IllegalStateException en caso de que no queden bolas
     public ColorBola quitarBolaAlAzar(){
         if (bolasBlancas == 0 && bolasNegras == 0) throw new IllegalStateException("No quedan bolas en la urna.");
