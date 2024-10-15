@@ -42,8 +42,10 @@
 <p>Típico problema en el que se tiene una urna y se pueden añadir bolas y obtener de forma aleatoria una de las bolas</p>
 
 
+
+
+
+
 [imagen_master]:https://www.bigdata.uma.es/wp-content/uploads/2022/05/Logo-2022-ok-web-290.png
-
-
 
 
