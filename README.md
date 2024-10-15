@@ -18,7 +18,7 @@
 
 <h2 id="sobre-los-proyectos">Sobre los proyectos</h2>
 <p>Estos proyectos se realizan para el primer modulo de Programacion orientada a objetos. de <code></code> I Edición del Máster en Big Data, Inteligencia Artificial e Ingeniería de Datos </code> de la UMA </p>
-![imagen_master]
+[![I Edición del Máster en Big Data, Inteligencia Artificial e Ingeniería de Datos][imagen_master]](https://example.com)
 
 <h3 id="proyecto1punto">Proyecto1Punto</h3>
 <p>Algunos ejemplos que hicimos en clase. Posee una clase Punto básica y su implementación</p>
