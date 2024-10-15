@@ -2,7 +2,7 @@ package jarras;
 
 
 public class Jarra {
-    private int capacidad;
+    private final int capacidad;
     private int contenido   ;
 
     /**
@@ -19,7 +19,7 @@ public class Jarra {
 
 
     /**
-     * @return la capacidad de la jarra
+     * @return la capacidad de <code>this</code>
      */
     public int capacidad(){
         return capacidad;
@@ -27,51 +27,44 @@ public class Jarra {
 
     /**
      *
-     * @return el contenido de la jarra
+     * @return el contenido de  <code>this</code>
      */
     public int contenido(){
         return contenido;
     }
 
     /**
-     * Vacía el contenido de la jarra
+     * Vacía el contenido de <code>this</code>
      */
     public void vacia() {
         contenido = 0;
     }
 
     /**
-     * Llena la jarra completamente
+     * Llena la capacidad de <code>this</code> completamente
      */
     public void llena() {
         contenido =  capacidad;
     }
 
     /**
-     * Llena la jarra hasta su capacidad con el contenido de
-     * la otra jarra.
+     * Llena  <code>this</code> hasta su capacidad con el contenido de
+     * la jarra <code>jarra</code>.
      *
-     * @param jarra la otra jarra
+     * @param jarra jarra de la que se extrae el contenido
      * @throws IllegalArgumentException en caso de que se intente llenar una jarra consigo misma
      */
     public void llenaDesde(Jarra jarra) {
-        // La jarra argumento no puede ser la misma que la receptora
         if (jarra==this) throw new IllegalArgumentException("La Jarra argumento no puede ser la misma que la receptora");
 
-        // Espacio disponible en la jarra receptora
         int espacioDisponible = capacidad - contenido;
 
-        // Si hay ms contenido en la jarra argumento que espacio disponible en la receptora
-        if (jarra.contenido > espacioDisponible) {
-            // Llena la jarra receptora al m ximo
+        if (jarra.contenido >= espacioDisponible) {
             contenido = capacidad;
-            // Descontamos el espacio disponible de la jarra argumento
             jarra.contenido -= espacioDisponible;
 
         } else {
-            // A dimos el contenido de la jarra argumento a la receptora
             contenido += jarra.contenido;
-            // Vaciamos la jarra argumento
             jarra.vacia();
         }
 
