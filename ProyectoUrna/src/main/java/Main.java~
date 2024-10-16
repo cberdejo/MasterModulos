@@ -17,8 +17,8 @@ public class Main {
             }
         }
         System.out.println(urna);
-        //Si el número de bolas es menor igual siempre queda una bola blanca
-        //En otro caso bola negra
-
+        //Si el número de bolas es igual siempre sale una bola blanca
+        //Si el número de bolas blancos es mayor que negras salen todas las negras
+        //Si el número de bolas negras es mayor que blancas salen todas las blancas
     }
 }
