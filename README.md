@@ -1,5 +1,5 @@
 <!--<details>-->
-  <summary>Tabla de contenidos</summary>
+  <h2>Tabla de contenidos</h2>
     <a href="#sobre-los-proyectos">Sobre los proyectos</a>
     <ul>
       <li><a href="#proyecto1punto">Proyecto1Punto</a></li>
@@ -17,7 +17,7 @@
 
 <h2 id="sobre-los-proyectos">Sobre los proyectos</h2>
 <p>Estos proyectos se realizan para el primer modulo de Programacion orientada a objetos. de <code> I Edición del Máster en Big Data, Inteligencia Artificial e Ingeniería de Datos </code> de la UMA </p>
-[![Uma master][imagen_master]](https://www.bigdata.uma.es)
+<!--[![Uma master][imagen_master]](https://www.bigdata.uma.es)-->
 
 <details>
 <summary>Descripción de proyectos</summary>
