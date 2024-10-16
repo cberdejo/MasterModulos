@@ -16,61 +16,64 @@ public class Libreria {
 
     ///Crea una librería con un tamanio inicial
     ///@param tam tamaño inicial de la libreria
+    /// @throws IllegalArgumentException si `tam` es negativo
     public Libreria(int tam){
         if (tam < 0) {
-            throw new IllegalArgumentException("El tamanio no puede ser negativo");
+            throw new IllegalArgumentException("El tamaño no puede ser negativo");
         }
         libros = new Libro[tam];
         numLibros = 0;
     }
 
-    ///Elimina un libro de la librería
+    ///Elimina un libro de la librería dado un `autor` y un `titulo`.
+    /// si el libro no está, no se hace nada
     ///@param autor autor del libro
     ///@param titulo titulo del libro
     public void remLibro(String autor, String titulo){
         int pos = posicionLibro(autor,titulo);
-        if (pos < 0)
-            throw new IllegalArgumentException("El libro no existe");
-
-        for (int i = pos; i < numLibros-1; i++) {
-            libros[i] = libros[i+1];
+        if (pos >= 0){
+            for (int i = pos; i < numLibros-1; i++) {
+                libros[i] = libros[i+1];
+            }
+            numLibros--;
+            libros[numLibros] = null;
         }
-        numLibros--;
+
+
     }
 
     /// Inserta un libro o edita su precio si ya existe a `this` dado autor, titulo y precio
     /// @Param autor autor del libro
     /// @Param titulo titulo del libro
     /// @Param precio precio base del libro
-    ///
     public void addLibro( String autor, String titulo, double precio){
         //Si precio es <0, se lanza la excepción al crear el libro
         addLibro( new Libro(autor, titulo, precio));
     }
 
-    ///Añade un libro a la librería
+    ///Obtiene el precio base de un libro dado un `autor` y un `titulo`
+    /// En caso de no existir, devuelve 0
     ///@param autor autor del libro
     ///@param titulo t titulo del libro
     ///@param precio precio base del libro
     /// @return el precio base de un libro perteneciente `this` dado un autor y un título
-    /// @throws IllegalArgumentException si el libro no existe.
+
     public double getPrecioBase(String autor, String titulo){
         int pos = posicionLibro(autor,titulo);
-        if (pos < 0)
-            throw new IllegalArgumentException("El libro no existe");
+        if (pos < 0) return 0;
+
         return  libros[pos].getPrecioBase();
     }
 
-    ///Añade un libro a la librería
+    ///Añade un libro a la librería dado un `autor` y un `titulo`
+    /// En caso de existir, no se hace nada
     ///@param autor autor del libro
     ///@param titulo titulo del libro
     ///@param precio precio base del libro
     /// @return el precio final de un libro perteneciente `this` dado un autor y un título
-    /// @throws IllegalArgumentException si el libro no existe.
     public double getPrecioFinal(String autor, String titulo){
         int pos = posicionLibro(autor,titulo);
-        if (pos < 0)
-            throw new IllegalArgumentException("El libro no existe");
+        if (pos < 0) return 0;
         return  libros[pos].getPrecioFinal();
     }
 
@@ -112,7 +115,18 @@ public class Libreria {
 
     @Override
     public String toString() {
-        return String.format("L(" + libros+")");
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (int i = 0; i < numLibros; i++) {
+
+            sb.append(libros[i]);
+
+            if (i < numLibros - 1) {
+                sb.append(", ");
+            }
+        }
+        sb.append("]");
+        return sb.toString();
     }
 
 

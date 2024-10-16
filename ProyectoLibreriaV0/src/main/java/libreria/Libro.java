@@ -42,6 +42,6 @@ public class Libro {
     }
     @Override
     public String toString(){
-        return String.format("%s; %s; %.3f; %.3f", autor, titulo, precioBase, getPrecioFinal());
+        return String.format("(%s; %s; %.3f; %.3f)", autor, titulo, precioBase, getPrecioFinal());
     }
 }
