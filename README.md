@@ -48,7 +48,7 @@
 <p>Proyecto en el que existen dos clases, una librería que contiene libros. Cada libro posee autor, titulo y precio. La gestión de los libros en la librería se realiza con un <code>array</code></p>
 
 <h3 id="proyectoLibreriaV1">ProyectoLibreriaV1</h3>
-<p>Proyecto en el que existen dos clases, una librería que contiene libros. Cada libro posee autor, titulo y precio. La gestión de los libros en la librería se realiza con una <code>Lista</code></p>
+<p>Proyecto en el que existen dos clases, una librería que contiene libros. Cada libro posee autor, titulo y precio. La gestión de los libros en la librería se realiza con una <code>list</code></p>
 
 <h3 id ="proyectoCoche">ProyectoCoche </h3>
 <p> Proyecto para practicar herencia en el que hay dos clases Coche y CocheImportado. Un CocheImportado redefine el método de calcular su precio total al que se le añade una homologación</p>
