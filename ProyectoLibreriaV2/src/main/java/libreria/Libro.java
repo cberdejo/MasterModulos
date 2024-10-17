@@ -13,6 +13,7 @@ public class Libro {
     /// @param ti titulo
     /// @param pb Precio base
     public Libro(String au, String ti, double pb) {
+        if (pb < 0) throw new IllegalArgumentException();
         autor = au;
         titulo = ti;
         precioBase = pb;

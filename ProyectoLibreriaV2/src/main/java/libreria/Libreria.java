@@ -30,7 +30,8 @@ public class Libreria {
     /// - Si ya está se sustituye
     /// - Si no está se añade
     /// @param libro a agregar
-    private void addLibro(Libro libro) {
+    protected void addLibro(Libro libro) {
+
         int pos = posicionLibro(libro.getAutor(), libro.getTitulo());
         if (pos < 0) {
 
