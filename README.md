@@ -1,4 +1,5 @@
 <!--<details>-->
+
   <h2>Tabla de contenidos</h2>
     <a href="#sobre-los-proyectos">Sobre los proyectos</a>
     <ul>
@@ -17,6 +18,10 @@
       <li><a href="#proyectoGenetico">ProyectoGenetico </a> [advanced]  </li>
       <li> <a href="#interfaces-ejemplos">InterfacesEjemplosClase </a> [class] </li>
     </ul>
+<p>class => Hechos en clase</p>
+<p>mandatoy => Obligatorios de entregar para aprobar la asignatura</p>
+<p>advanced => Entregables mas complicados</p>
+    
 <!--</details>-->
 
 <h2 id="sobre-los-proyectos">Sobre los proyectos</h2>
