@@ -2,20 +2,20 @@
   <h2>Tabla de contenidos</h2>
     <a href="#sobre-los-proyectos">Sobre los proyectos</a>
     <ul>
-      <li><a href="#proyecto1punto">Proyecto1Punto [class]</a></li>
-      <li><a href="#proyectoestadistica">ProyectoEstadistica [lab]</a></li>
-      <li><a href="#proyectojarras">ProyectoJarras [mandatory]</a></li>
-      <li><a href="#proyectonpiv1">ProyectoNPIV1 [lab]</a></li>
-      <li><a href="#proyectorectas">ProyectoRectas [advanced]</a></li>
-      <li><a href="#proyectouniversov1">ProyectoUniversoV1</a></li>
-      <li><a href="#proyectourna">ProyectoUrna [mandatory]</a></li>
-      <li><a href="#proyectoLibreriaV0">ProyectoLibreriaV0 [class] </a></li>
-      <li><a href="#proyectoLibreriaV1">ProyectoLibreriaV1 [class]</a></li>
-      <li><a href="#proyectoLibreriaV2">ProyectoLibreriaV2 [class] </a></li>
-      <li><a href="#proyectoLibreriaV3">ProyectoLibreriaV3 [class] </a></li>
-      <li><a href="#proyectoCoche">ProyectoCoche [mandatory] [class] </a></li>
-      <li><a href="#proyectoGenetico">ProyectoGenetico [advanced] [class] </a> </li>
-      <li> <a href="#interfaces-ejemplos">InterfacesEjemplosClase [class]</a> </li>
+      <li><a href="#proyecto1punto">Proyecto1Punto </a> [class]</li>
+      <li><a href="#proyectoestadistica">ProyectoEstadistica </a>  [lab]</li>
+      <li><a href="#proyectojarras">ProyectoJarras </a> [mandatory]</li>
+      <li><a href="#proyectonpiv1">ProyectoNPIV1 </a> [lab]</li>
+      <li><a href="#proyectorectas">ProyectoRectas </a> [advanced]</li>
+      <li><a href="#proyectouniversov1">ProyectoUniversoV1</a> [class]</li>
+      <li><a href="#proyectourna">ProyectoUrna </a> [mandatory]</li>
+      <li><a href="#proyectoLibreriaV0">ProyectoLibreriaV0 </a> [class]</li>
+      <li><a href="#proyectoLibreriaV1">ProyectoLibreriaV1 </a> [class]</li>
+      <li><a href="#proyectoLibreriaV2">ProyectoLibreriaV2 </a> [class]</li>
+      <li><a href="#proyectoLibreriaV3">ProyectoLibreriaV3 </a> [class]</li>
+      <li><a href="#proyectoCoche">ProyectoCoche </a> [mandatory]</li>
+      <li><a href="#proyectoGenetico">ProyectoGenetico </a> [advanced]  </li>
+      <li> <a href="#interfaces-ejemplos">InterfacesEjemplosClase </a> [class] </li>
     </ul>
 <!--</details>-->
 
