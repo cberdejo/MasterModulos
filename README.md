@@ -11,8 +11,9 @@
       <li><a href="#proyectourna">ProyectoUrna</a></li>
       <li><a href="#proyectoLibreriaV0">ProyectoLibreriaV0</a></li>
       <li><a href="#proyectoLibreriaV1">ProyectoLibreriaV1</a></li>
-      <li><a href="#proyectoLibreriaV2">ProyectoLibreriaV1</a></li>
-      <li><a href="#proyectoCoche">Proyecto coche </a></li>
+      <li><a href="#proyectoLibreriaV2">ProyectoLibreriaV2</a></li>
+      <li><a href="#proyectoCoche">ProyectoCoche </a></li>
+      <li> <a href="#interfaces-ejemplos">InterfacesEjemplosClase </a> </li>
     </ul>
 <!--</details>-->
 
@@ -56,6 +57,8 @@
 <h3 id ="proyectoCoche">ProyectoCoche </h3>
 <p> Proyecto para practicar herencia en el que hay dos clases Coche y CocheImportado. Un CocheImportado redefine el método de calcular su precio total al que se le añade una homologación</p>
      
+<h3 id="#interfaces-ejemplos">InterfacesEjemplosClase </h3>
+<p>Ejemplo de proyectos dado en clase que explica interfaces con una clase de persona y amigos. Se dan varias formas de resolverlo para mostrar la utilidad de las interfaces </p>
 </details>
 
 
