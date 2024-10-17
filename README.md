@@ -11,6 +11,7 @@
       <li><a href="#proyectourna">ProyectoUrna</a></li>
       <li><a href="#proyectoLibreriaV0">ProyectoLibreriaV0</a></li>
       <li><a href="#proyectoLibreriaV1">ProyectoLibreriaV1</a></li>
+      <li><a href="#proyectoLibreriaV2">ProyectoLibreriaV1</a></li>
       <li><a href="#proyectoCoche">Proyecto coche </a></li>
     </ul>
 <!--</details>-->
@@ -50,6 +51,8 @@
 <h3 id="proyectoLibreriaV1">ProyectoLibreriaV1</h3>
 <p>Proyecto en el que existen dos clases, una librería que contiene libros. Cada libro posee autor, titulo y precio. La gestión de los libros en la librería se realiza con una <code>list</code></p>
 
+<h3 id="proyectoLibreriaV2">ProyectoLibreriaV2</h3>
+<p> El comportamiento se expande para que puedan existir libros en ofertas para que puedan tener descuentos. Se práctica la herencia. </p>
 <h3 id ="proyectoCoche">ProyectoCoche </h3>
 <p> Proyecto para practicar herencia en el que hay dos clases Coche y CocheImportado. Un CocheImportado redefine el método de calcular su precio total al que se le añade una homologación</p>
      

@@ -15,6 +15,7 @@ public class CocheImportado  extends Coche {
     }
     /// Devuelve el precio total, añadiendole la homologación correspondiente
     /// @return el precio total del coche
+    @Override
     public double precioTotal() {
         return super.precioTotal() + homologacion;
 
