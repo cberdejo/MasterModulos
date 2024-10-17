@@ -16,7 +16,6 @@
       <li><a href="#proyectoCoche">ProyectoCoche [mandatory] [class] </a></li>
       <li><a href="#proyectoGenetico">ProyectoGenetico [advanced] [class] </a> </li>
       <li> <a href="#interfaces-ejemplos">InterfacesEjemplosClase [class]</a> </li>
-    
     </ul>
 <!--</details>-->
 
