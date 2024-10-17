@@ -2,18 +2,21 @@
   <h2>Tabla de contenidos</h2>
     <a href="#sobre-los-proyectos">Sobre los proyectos</a>
     <ul>
-      <li><a href="#proyecto1punto">Proyecto1Punto</a></li>
-      <li><a href="#proyectoestadistica">ProyectoEstadistica</a></li>
-      <li><a href="#proyectojarras">ProyectoJarras</a></li>
-      <li><a href="#proyectonpiv1">ProyectoNPIV1</a></li>
-      <li><a href="#proyectorectas">ProyectoRectas</a></li>
+      <li><a href="#proyecto1punto">Proyecto1Punto [class]</a></li>
+      <li><a href="#proyectoestadistica">ProyectoEstadistica [lab]</a></li>
+      <li><a href="#proyectojarras">ProyectoJarras [mandatory]</a></li>
+      <li><a href="#proyectonpiv1">ProyectoNPIV1 [lab]</a></li>
+      <li><a href="#proyectorectas">ProyectoRectas [advanced]</a></li>
       <li><a href="#proyectouniversov1">ProyectoUniversoV1</a></li>
-      <li><a href="#proyectourna">ProyectoUrna</a></li>
-      <li><a href="#proyectoLibreriaV0">ProyectoLibreriaV0</a></li>
-      <li><a href="#proyectoLibreriaV1">ProyectoLibreriaV1</a></li>
-      <li><a href="#proyectoLibreriaV2">ProyectoLibreriaV2</a></li>
-      <li><a href="#proyectoCoche">ProyectoCoche </a></li>
-      <li> <a href="#interfaces-ejemplos">InterfacesEjemplosClase </a> </li>
+      <li><a href="#proyectourna">ProyectoUrna [mandatory]</a></li>
+      <li><a href="#proyectoLibreriaV0">ProyectoLibreriaV0 [class] </a></li>
+      <li><a href="#proyectoLibreriaV1">ProyectoLibreriaV1 [class]</a></li>
+      <li><a href="#proyectoLibreriaV2">ProyectoLibreriaV2 [class] </a></li>
+      <li><a href="#proyectoLibreriaV3">ProyectoLibreriaV3 [class] </a></li>
+      <li><a href="#proyectoCoche">ProyectoCoche [mandatory] [class] </a></li>
+      <li><a href="#proyectoGenetico">ProyectoGenetico [advanced] [class] </a> </li>
+      <li> <a href="#interfaces-ejemplos">InterfacesEjemplosClase [class]</a> </li>
+    
     </ul>
 <!--</details>-->
 
@@ -54,11 +57,18 @@
 
 <h3 id="proyectoLibreriaV2">ProyectoLibreriaV2</h3>
 <p> El comportamiento se expande para que puedan existir libros en ofertas para que puedan tener descuentos. Se práctica la herencia. </p>
+
+<h3 id="proyectoLibreriaV3">ProyectoLibreriaV3</h3>
+<p> En progreso... </p>
+
 <h3 id ="proyectoCoche">ProyectoCoche </h3>
 <p> Proyecto para practicar herencia en el que hay dos clases Coche y CocheImportado. Un CocheImportado redefine el método de calcular su precio total al que se le añade una homologación</p>
      
 <h3 id="#interfaces-ejemplos">InterfacesEjemplosClase </h3>
 <p>Ejemplo de proyectos dado en clase que explica interfaces con una clase de persona y amigos. Se dan varias formas de resolverlo para mostrar la utilidad de las interfaces </p>
+
+<h3 id="proyectoGenetico">ProyectoGenetico </h3>
+<p>En progreso... </p>
 </details>
 
 
