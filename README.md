@@ -1,6 +1,6 @@
 <h2>Tabla de contenidos</h2>
   <a href="#sobre-los-proyectos">Sobre los proyectos</a>
-  </br>
+   <br>
 <!-- Detalles del Módulo 1 -->
 <details>
   <summary><code> Introducción a la Programación orientada a objetos con Java </code></summary>
