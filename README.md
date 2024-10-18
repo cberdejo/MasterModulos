@@ -39,7 +39,7 @@
 <!--[![Uma master][imagen_master]](https://www.bigdata.uma.es)-->
 
 <details>
-<summary>Descripción de proyectos</summary>
+<summary>Introducción a la Programación orientada a objetos con Java</summary>
 
 <h3 id="proyecto1punto">Proyecto1Punto</h3>
 <p>Algunos ejemplos que hicimos en clase. Posee una clase Punto básica y su implementación</p>
