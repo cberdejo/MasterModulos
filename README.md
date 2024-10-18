@@ -7,6 +7,7 @@
       <li><a href="#proyectoestadistica">ProyectoEstadistica </a>  [lab]</li>
       <li><a href="#proyectojarras">ProyectoJarras </a> [mandatory]</li>
       <li><a href="#proyectonpiv1">ProyectoNPIV1 </a> [lab]</li>
+      <li><a href="#proyectonpiv1">ProyectoNPIV2 </a> [lab]</li>
       <li><a href="#proyectorectas">ProyectoRectas </a> [advanced]</li>
       <li><a href="#proyectouniversov1">ProyectoUniversoV1</a> [class]</li>
       <li><a href="#proyectourna">ProyectoUrna </a> [mandatory]</li>
@@ -43,6 +44,9 @@
 
 <h3 id="proyectonpiv1">ProyectoNPIV1</h3>
 <p>Consiste en una calculadora que permite sumar, restar, multiplicar y dividir utilizando la notación polaca inversa. </p>
+
+<h3 id="proyectonpiv2">ProyectoNPIV2</h3>
+<p>Se utilizan operadores y programación funcional para simplificar la clase, se añade la raiz como operación </p>
 
 <h3 id="proyectorectas">ProyectoRectas</h3>
 <p>En progreso...</p>
