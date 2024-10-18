@@ -1,11 +1,8 @@
 <h2>Tabla de contenidos</h2>
-
-
-
+  <a href="#sobre-los-proyectos">Sobre el master</a>
 <!-- Detalles del Módulo 1 -->
 <details>
-  <summary>Módulo 1</summary>
-  <a href="#sobre-los-proyectos">Sobre los proyectos</a>
+  <summary><code> Introducción a la Programación orientada a objetos con Java </code></summary>
   <ul>
     <li><a href="#proyecto1punto">Proyecto 1 Punto </a> [class]</li>
     <li><a href="#proyectoestadistica">Proyecto Estadística </a> [lab]</li>
@@ -38,7 +35,7 @@
 </details>
 
 <h2 id="sobre-los-proyectos">Sobre los proyectos</h2>
-<p>Estos proyectos se realizan para el primer modulo de Programacion orientada a objetos. de <code> I Edición del Máster en Big Data, Inteligencia Artificial e Ingeniería de Datos </code> de la UMA </p>
+<p>Estos proyectos se realizan los modulos  de <code> I Edición del Máster en Big Data, Inteligencia Artificial e Ingeniería de Datos </code> de la UMA </p>
 <!--[![Uma master][imagen_master]](https://www.bigdata.uma.es)-->
 
 <details>
