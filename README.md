@@ -1,7 +1,10 @@
 <h2>Tabla de contenidos</h2>
-  <a href="#sobre-los-proyectos">Sobre los proyectos</a>
-   <br>
+
+   
 <!-- Detalles del Módulo 1 -->
+<div> 
+    <a href="#sobre-los-proyectos">Sobre los proyectos</a>
+</div>
 <details>
   <summary><code> Introducción a la Programación orientada a objetos con Java </code></summary>
   <ul>
