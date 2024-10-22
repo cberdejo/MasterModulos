@@ -1,36 +1,45 @@
-<!--<details>-->
+<h2>Tabla de contenidos</h2>
 
-  <h2>Tabla de contenidos</h2>
-    <a href="#sobre-los-proyectos">Sobre los proyectos</a>
-    <ul>
-      <li><a href="#proyecto1punto">Proyecto1Punto </a> [class]</li>
-      <li><a href="#proyectoestadistica">ProyectoEstadistica </a>  [lab]</li>
-      <li><a href="#proyectojarras">ProyectoJarras </a> [mandatory]</li>
-      <li><a href="#proyectonpiv1">ProyectoNPIV1 </a> [lab]</li>
-      <li><a href="#proyectonpiv1">ProyectoNPIV2 </a> [lab]</li>
-      <li><a href="#proyectorectas">ProyectoRectas </a> [advanced]</li>
-      <li><a href="#proyectouniversov1">ProyectoUniversoV1</a> [class]</li>
-      <li><a href="#proyectourna">ProyectoUrna </a> [mandatory]</li>
-      <li><a href="#proyectoLibreriaV0">ProyectoLibreriaV0 </a> [class]</li>
-      <li><a href="#proyectoLibreriaV1">ProyectoLibreriaV1 </a> [class]</li>
-      <li><a href="#proyectoLibreriaV2">ProyectoLibreriaV2 </a> [class]</li>
-      <li><a href="#proyectoLibreriaV3">ProyectoLibreriaV3 </a> [class]</li>
-      <li><a href="#proyectoCoche">ProyectoCoche </a> [mandatory]</li>
-      <li><a href="#proyectoGenetico">ProyectoGenetico </a> [advanced]  </li>
-      <li> <a href="#interfaces-ejemplos">InterfacesEjemplosClase </a> [class] </li>
-    </ul>
-<p>class => Hechos en clase</p>
-<p>mandatoy => Obligatorios de entregar para aprobar la asignatura</p>
-<p>advanced => Entregables mas complicados</p>
-    
-<!--</details>-->
+  <p>  <a href="#sobre-los-proyectos">Sobre los proyectos</a></p>
+
+<details>
+  <summary><code> Introducción a la Programación orientada a objetos con Java </code></summary>
+  <ul>
+    <li><a href="#proyecto1punto">Proyecto 1 Punto </a> [class]</li>
+    <li><a href="#proyectoestadistica">Proyecto Estadística </a> [lab]</li>
+    <li><a href="#proyectojarras">Proyecto Jarras </a> [mandatory]</li>
+    <li><a href="#proyectonpiv1">Proyecto NPI V1 </a> [lab]</li>
+    <li><a href="#proyectonpiv2">Proyecto NPI V2 </a> [lab]</li>
+    <li><a href="#proyectorectas">Proyecto Rectas </a> [advanced]</li>
+    <li><a href="#proyectouniversov1">Proyecto Universo V1</a> [class]</li>
+    <li><a href="#proyectourna">Proyecto Urna </a> [mandatory]</li>
+    <li><a href="#proyectoLibreriaV0">Proyecto Librería V0 </a> [class]</li>
+    <li><a href="#proyectoLibreriaV1">Proyecto Librería V1 </a> [class]</li>
+    <li><a href="#proyectoLibreriaV2">Proyecto Librería V2 </a> [class]</li>
+    <li><a href="#proyectoLibreriaV3">Proyecto Librería V3 </a> [class]</li>
+    <li><a href="#proyectoCoche">Proyecto Coche </a> [mandatory]</li>
+    <li><a href="#proyectoGenetico">Proyecto Genético </a> [advanced]</li>
+    <li><a href="#interfaces-ejemplos">Interfaces Ejemplos Clase </a> [class]</li>
+  </ul>
+  <p><strong>Definiciones:</strong></p>
+  <p><strong>[class]:</strong> Proyectos realizados en clase</p>
+  <p><strong>[mandatory]:</strong> Proyectos obligatorios para aprobar la asignatura</p>
+  <p><strong>[advanced]:</strong> Proyectos más avanzados o complicados</p>
+  <p><strong>[lab]:</strong> Proyectos trabajados en laboratorio</p>
+</details>
+
+<details>
+  <summary>Módulo 2</summary>
+  <ul>
+  
+</details>
 
 <h2 id="sobre-los-proyectos">Sobre los proyectos</h2>
-<p>Estos proyectos se realizan para el primer modulo de Programacion orientada a objetos. de <code> I Edición del Máster en Big Data, Inteligencia Artificial e Ingeniería de Datos </code> de la UMA </p>
+<p>Estos proyectos se realizan los modulos  de <code> I Edición del Máster en Big Data, Inteligencia Artificial e Ingeniería de Datos </code> de la UMA </p>
 <!--[![Uma master][imagen_master]](https://www.bigdata.uma.es)-->
 
 <details>
-<summary>Descripción de proyectos</summary>
+<summary>Introducción a la Programación orientada a objetos con Java</summary>
 
 <h3 id="proyecto1punto">Proyecto1Punto</h3>
 <p>Algunos ejemplos que hicimos en clase. Posee una clase Punto básica y su implementación</p>
