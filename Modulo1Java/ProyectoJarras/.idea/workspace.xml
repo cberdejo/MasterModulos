@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="54060993-8c1f-4cf0-8ad8-7427603d7c2d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ProyectoGenetico/src/main/java/genetico/CeroMax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoGenetico/src/main/java/genetico/Individuo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoGenetico/src/main/java/genetico/OneMax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoGenetico/src/main/java/genetico/Problema.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proyectoHospital/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proyectoHospital/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proyectoHospital/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proyectoHospital/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proyectoHospital/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proyectoHospital/src/main/java/hospitales/Categoria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proyectoHospital/src/main/java/hospitales/Departamento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proyectoHospital/src/main/java/hospitales/Genero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proyectoHospital/src/main/java/hospitales/Medico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proyectoHospital/src/main/java/hospitales/Paciente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proyectoHospital/src/main/java/hospitales/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProyectoGenetico/src/main/java/TestGenetico.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoGenetico/src/main/java/TestGenetico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProyectoGenetico/src/main/java/genetico/Cromosoma.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoGenetico/src/main/java/genetico/Cromosoma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jarras/Jarra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jarras/Jarra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jarras/Mesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jarras/Mesa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProyectoNPIV2/src/main/java/npi/NPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoNPIV2/src/main/java/npi/NPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProyectoUrna/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoUrna/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProyectoUrna/src/main/java/urna/Urna.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoUrna/src/main/java/urna/Urna.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2nFBAwsBjZOdRNsHhRH5O35XU1I" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/cberd/Desktop/Master/Modulo1-Java/ProyectoUrna",
+    "onboarding.tips.debug.path": "C:/Users/cberd/IdeaProjects/2024POO/ProyectoJarras/src/main/java/org/uma/es/Main.java"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ProyectoJarras" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="54060993-8c1f-4cf0-8ad8-7427603d7c2d" name="Changes" comment="" />
+      <created>1728558807170</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728558807170</updated>
+    </task>
+    <servers />
+  </component>
+</project>
