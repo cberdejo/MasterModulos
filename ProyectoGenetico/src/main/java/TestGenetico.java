@@ -38,6 +38,6 @@ public class TestGenetico {
 
 
     public static void main(String[] args) {
-        Cromosoma cromosoma = new Cromosoma(15,false);
+        Cromosoma cromosoma = new Cromosoma(5,true);
     }
 }

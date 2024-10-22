@@ -4,7 +4,7 @@ package jarras;
 
 public class Jarra {
     private final int capacidad;
-    private int contenido;
+    private int contenido   ;
 
     /**
      * Crea una Jarra con con una capacidad inicial

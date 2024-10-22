@@ -15,13 +15,17 @@ public class Urna {
     /// Número de bolas blancas
     private int bolasBlancas;
 
-    private Random random;
+    private static Random random;
 
     /// Crea una urna con un número determinado de bolas negras y blancas.
     ///
     /// @param bolasNegras  el número de bolas negras
     /// @param bolasBlancas el número de bolas blancas
+    /// @throws IllegalArgumentException en caso de que `bolasNegras` sea menor que `0` o `bolasBlancas` sea menor que `0`
     public Urna(int bolasNegras, int bolasBlancas) {
+        if (bolasNegras < 0 || bolasBlancas < 0) {
+            throw new IllegalArgumentException("La urna no puede tener negativas bolas");
+        }
         this.bolasNegras = bolasNegras;
         this.bolasBlancas = bolasBlancas;
         this.random = new Random();

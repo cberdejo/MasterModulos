@@ -20,11 +20,13 @@ public class Mesa {
     }
 
     /**
-     * Crea una Mesa con una capacidad para ambas Jarras.
-     * @param capacidad capacidad inicial para ambas Jarras.
+     * Crea una Mesa con dos jarras.
+     * @param j1 la primera Jarra
+     * @param j2 la segunda Jarra
      */
-    public Mesa(int capacidad) {
-        this(capacidad,capacidad);
+    public Mesa(Jarra j1, Jarra j2) {
+        jarraIz = j1;
+        jarraDr = j2;
     }
 
     /**
@@ -34,7 +36,6 @@ public class Mesa {
    public int contenido(Posicion posicion){
         return posicion == Posicion.DERECHA ? jarraDr.contenido() : jarraIz.contenido();
    }
-
 
    /**
     * @param posicion La Posicion de la jarra a consultar
@@ -83,6 +84,6 @@ public class Mesa {
     */
    @Override
    public String toString() {
-       return "M(" + jarraIz.toString() + "," + jarraDr.toString() + ")";
+       return "M(" + jarraIz+ "," + jarraDr+ ")";
    }
 }

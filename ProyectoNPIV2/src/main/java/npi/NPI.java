@@ -34,15 +34,13 @@ public class NPI {
     /// ###Operaciones con una sola variable
     /// @param  operador que se aplica
     public void opera1 (DoubleUnaryOperator operador){
-
         x = operador.applyAsDouble(x);
 
     }
     /// ###Operaciones con dos variables
     /// @param operador que se aplica
     public void opera2 (DoubleBinaryOperator operador){
-
-        x = operador.applyAsDouble(x,y);
+        x = operador.applyAsDouble(y,x);
         y = z;
         z = t;
     }
