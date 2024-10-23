@@ -25,10 +25,15 @@ public class Main {
                 Parece ser que si hay mas bolas negras que blancas en la urna, la ultima saldrá siempre negra.
                 En caso de que haya el mismo número o mayor de bolas blancas que negras, la bola extraida final siempre será blanca.
              */
-        } catch (IllegalArgumentException e) {
+        } catch (ArrayIndexOutOfBoundsException | NumberFormatException e) {
+            System.err.println("Escribe dos números para las urnas: " + e.getMessage());
+        }
+        catch (IllegalArgumentException e) {
             System.err.println("Escribe un número mayor que 0 para las urnas: " + e.getMessage());
         } catch (NoSuchElementException e) {
             System.err.println("No hay más bolas para extraer.");
+        } finally {
+            System.out.println("Hemos terminado");
         }
     }
 

@@ -4,19 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1276a0ef-baad-4b77-8e52-d367f57d54b5" name="Changes" comment="" />
+    <list default="true" id="8ec8ee5d-416e-4c69-9c24-5d7bf3f7af23" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
   "associatedIndex": 3
 }]]></component>
-  <component name="ProjectId" id="2nTrQULyfMRjUun79QHW9b4zbhu" />
+  <component name="ProjectId" id="2nnp81VVmWZVFEvtQzAosoeHq8j" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,17 +28,17 @@
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/cberd/IdeaProjects/2024POO/ProyectoJarras"
+    "last_opened_file_path": "C:/Users/cberd/Desktop/Master/Modulo1Java/Proyecto1Punto"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1276a0ef-baad-4b77-8e52-d367f57d54b5" name="Changes" comment="" />
-      <created>1729007892368</created>
+      <changelist id="8ec8ee5d-416e-4c69-9c24-5d7bf3f7af23" name="Changes" comment="" />
+      <created>1729618532380</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1729007892368</updated>
+      <updated>1729618532380</updated>
     </task>
     <servers />
   </component>

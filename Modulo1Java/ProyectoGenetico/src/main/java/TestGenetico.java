@@ -1,4 +1,4 @@
-/*
+
 import genetico.AGUniforme;
 import genetico.OneMax;
 import genetico.AGUnPunto;
@@ -28,16 +28,6 @@ public class TestGenetico {
         System.out.println("Solución 2:" + solucion2);
     }
 }
- */
-
-
-import genetico.Cromosoma;
-
-public class TestGenetico {
 
 
 
-    public static void main(String[] args) {
-        Cromosoma cromosoma = new Cromosoma(5,true);
-    }
-}
