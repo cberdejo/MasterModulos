@@ -21,6 +21,7 @@
     <li><a href="#proyectoCoche">Proyecto Coche </a> [mandatory]</li>
     <li><a href="#proyectoGenetico">Proyecto Genético </a> [advanced]</li>
     <li><a href="#interfaces-ejemplos">Interfaces Ejemplos Clase </a> [class]</li>
+    <li> <a href="#ProyectoMastermind">Proyecto Mastermind </a> [class] <li>
   </ul>
   <p><strong>Definiciones:</strong></p>
   <p><strong>[class]:</strong> Proyectos realizados en clase</p>
@@ -89,6 +90,9 @@
 <p>Ejemplo de proyectos dado en clase que explica interfaces con una clase de persona y amigos. Se dan varias formas de resolverlo para mostrar la utilidad de las interfaces </p>
 
 <h3 id="proyectoGenetico">ProyectoGenetico </h3>
+<p>En progreso... </p>
+
+<h3 id="proyectoMastermind">ProyectoMastermind </h3>
 <p>En progreso... </p>
 </details>
 
