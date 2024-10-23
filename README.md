@@ -17,6 +17,7 @@
     <li><a href="#proyectoLibreriaV1">Proyecto Librería V1 </a> [class]</li>
     <li><a href="#proyectoLibreriaV2">Proyecto Librería V2 </a> [class]</li>
     <li><a href="#proyectoLibreriaV3">Proyecto Librería V3 </a> [class]</li>
+    <li><a href="#proyectoLibreriaV4">Proyecto Librería V4 </a> [class]</li>
     <li><a href="#proyectoCoche">Proyecto Coche </a> [mandatory]</li>
     <li><a href="#proyectoGenetico">Proyecto Genético </a> [advanced]</li>
     <li><a href="#interfaces-ejemplos">Interfaces Ejemplos Clase </a> [class]</li>
@@ -76,7 +77,10 @@
 <p> El comportamiento se expande para que puedan existir libros en ofertas para que puedan tener descuentos. Se práctica la herencia. </p>
 
 <h3 id="proyectoLibreriaV3">ProyectoLibreriaV3</h3>
-<p> En progreso... </p>
+<p> La oferta ahora es flexible y existe una clase libreria oferta que extiende libreria que acepta clases que implementan la interfaz de oferta flexible</p>
+
+<h3 id="proyectoLibreriaV4">ProyectoLibreriaV4</h3>
+<p> Se añade la implementación de equals y hashcode y encuentra mucho mas facil los libros en la libreria </p>
 
 <h3 id ="proyectoCoche">ProyectoCoche </h3>
 <p> Proyecto para practicar herencia en el que hay dos clases Coche y CocheImportado. Un CocheImportado redefine el método de calcular su precio total al que se le añade una homologación</p>
