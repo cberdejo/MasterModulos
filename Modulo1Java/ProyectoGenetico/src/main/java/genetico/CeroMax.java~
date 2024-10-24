@@ -10,8 +10,8 @@ public class CeroMax implements Problema {
     @Override
     public double evalua(Cromosoma cromosoma) {
         double numCeros = 0;
-        for(int pos = 0; pos < cromosoma.getLongitud(); pos++) {
-            if (cromosoma.getGen(pos) == 0) numCeros++;
+        for(int gen :cromosoma.datos) {
+            if (gen == 0) numCeros++;
         }
         return numCeros;
     }

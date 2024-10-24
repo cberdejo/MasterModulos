@@ -5,9 +5,9 @@ import java.util.Random;
 ///@author Christian Berdejo
 ///@version 1.0
 public class Cromosoma {
-    protected int [] datos;
+    private int [] datos;
     private final int GEN_POR_DEFECTO=0;
-    private static Random gna =new Random();
+    private static Random gna = new Random();
 
     /// Crea un Cromosoma
     /// @param longitud indica el número de genes
@@ -22,6 +22,7 @@ public class Cromosoma {
         }
 
     }
+
     /// Crea un Cromosoma copia de otro
     /// @param cromosoma el cromosoma que se copia
     public void Cromosoma (Cromosoma cromosoma){

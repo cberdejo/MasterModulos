@@ -1,10 +1,5 @@
 
-import genetico.AGUniforme;
-import genetico.OneMax;
-import genetico.AGUnPunto;
-import genetico.AlgoritmoGenetico;
-import genetico.Individuo;
-import genetico.Problema;
+import genetico.*;
 
 public class TestGenetico {
 
@@ -22,8 +17,9 @@ public class TestGenetico {
         Individuo solucion1 = ga1.ejecuta();
         System.out.println("Solución 1:" + solucion1);
 
+        Problema problema2  = new CeroMax();
         AlgoritmoGenetico ga2 = new AGUniforme(TAM_POBLACION, LONG_CROMOSOMA,
-                PASOS_GA, PROB_MUT, problema);
+                PASOS_GA, PROB_MUT, problema2);
         Individuo solucion2 = ga2.ejecuta();
         System.out.println("Solución 2:" + solucion2);
     }

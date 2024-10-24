@@ -44,7 +44,7 @@ public abstract class AlgoritmoGenetico {
             poblacion.reemplaza(new Individuo(cromosomaRecombinado,problema));
 
         }
-        return poblacion.getMejorIndividuo();
+        return poblacion.mejorIndividuo();
 
     }
 

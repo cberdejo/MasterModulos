@@ -1,4 +1,7 @@
 package genetico;
+
+import java.util.Arrays;
+
 ///@Author: Christian Berdejo
 ///@Version:1.0
 public class Poblacion {
@@ -35,8 +38,9 @@ public class Poblacion {
 
     ///Devuelve el mejor individuo de `this`, es decir, el que mayor `fitness` tenga
     /// @return el mejor individuo
-    public Individuo  getMejorIndividuo(){
+    public Individuo mejorIndividuo(){
         Individuo mejor = this.individuos[0];
+       //Se podría simplificar con un stream
         for (int i = 1; i < this.individuos.length; i++){
             if (this.individuos[i].getFitness() > mejor.getFitness())
                 mejor = this.individuos[i];

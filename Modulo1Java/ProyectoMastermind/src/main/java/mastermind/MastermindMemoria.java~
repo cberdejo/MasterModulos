@@ -30,6 +30,7 @@ public class MastermindMemoria extends Mastermind{
         if (movmientos.contains(movimiento)) {
             throw new MastermindException("Ya has intentado esa combinacion");
         }
+
         movimientos().add(movimiento);
         return movimiento;
     }

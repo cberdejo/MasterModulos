@@ -48,7 +48,6 @@ public class Mastermind {
         // (?!.*\1) se asegura de que no se repita el mismo digito
         //{longitud} número de digitos únicos
         return cifras.matches("(?:(\\d)(?!.*\\1)){" + getLongitud() + "}");
-
     }
     /// Realiza un intento para adivinar la clave secreta
     /// @param intento La combinacion introducida por el usuario

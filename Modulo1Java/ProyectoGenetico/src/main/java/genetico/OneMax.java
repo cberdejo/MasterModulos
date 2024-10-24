@@ -1,5 +1,7 @@
 package genetico;
 
+import java.util.Arrays;
+
 public class OneMax implements Problema {
 
     /// Devuelve el fitness de `cromosoma`
@@ -9,8 +11,9 @@ public class OneMax implements Problema {
     @Override
     public double evalua(Cromosoma cromosoma) {
         double numUnos = 0;
-        for(int gen :cromosoma.datos) {
-            if (gen == 1) numUnos++;
+
+        for(int pos = 0; pos < cromosoma.getLongitud(); pos++) {
+            if (cromosoma.getGen(pos) == 1) numUnos++;
         }
         return numUnos;
     }
