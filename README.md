@@ -21,7 +21,9 @@
     <li><a href="#proyectoCoche">Proyecto Coche </a> [mandatory]</li>
     <li><a href="#proyectoGenetico">Proyecto Genético </a> [advanced]</li>
     <li><a href="#interfaces-ejemplos">Interfaces Ejemplos Clase </a> [class]</li>
-    <li> <a href="#ProyectoMastermind">Proyecto Mastermind </a> [class] <li>
+    <li><a href="#ProyectoMastermind">Proyecto Mastermind </a> [class] </li>
+    <li><a href="#ProyectoAlturasV1">Proyecto Alturas V1 </a> [class] </li>
+     <li><a href="#ProyectoTest">ProyectoTest </a> [class] </li>
   </ul>
   <p><strong>Definiciones:</strong></p>
   <p><strong>[class]:</strong> Proyectos realizados en clase</p>
@@ -94,6 +96,12 @@
 
 <h3 id="proyectoMastermind">ProyectoMastermind </h3>
 <p>En progreso... </p>
+
+<h3 id="ProyectoAlturasV1"> ProyectoAlturasV1 </h3>
+<p>En progreso... </p>
+
+<h3 id="ProyectoTest"> ProyectoTest </h3>
+<p> Práctica para prácticar el uso de Scanner y sus métodos </p>
 </details>
 
 
