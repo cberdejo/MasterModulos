@@ -7,15 +7,13 @@ import java.util.Random;
 public class Cromosoma {
     protected int [] datos;
     private final int GEN_POR_DEFECTO=0;
-    private static Random gna;
+    private static Random gna =new Random();
 
     /// Crea un Cromosoma
     /// @param longitud indica el número de genes
     /// @param rdm Indica si el cromosoma se inicializa con genes valores aleatorios o con valores por defecto
     public Cromosoma(int longitud, boolean rdm) {
         if (longitud < 0) throw new IllegalArgumentException();
-
-        gna = new Random(); //inicializa el generador aleatorio
 
         //inicializa array
         this.datos = new int[longitud];

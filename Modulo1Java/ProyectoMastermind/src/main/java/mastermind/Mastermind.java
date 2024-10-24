@@ -26,7 +26,9 @@ public class Mastermind {
     private void generarCombinacionSecreta(int numCifras) {
         this.combinacionSecreta = "";
         for (int i = 0; i < numCifras; i++) {
-            this.combinacionSecreta += alea.nextInt(numCifras);
+            String n = Integer.toString(alea.nextInt(10));
+            if (!combinacionSecreta.contains(n))
+                this.combinacionSecreta += n;
         }
     }
 
@@ -35,13 +37,42 @@ public class Mastermind {
         return this.combinacionSecreta.length();
     }
 
-    /// Comprueba la validez de una combinacion
+    /// Comprueba la validez de una combinacion:
+    /// - Debe tener el mismo número de dígitos que la combinación secreta
+    /// - Cada dígito debe ser único
+    /// - Cada dígito debe ser un número
     /// @param cifras La combinacion
     /// @return `true` si la combinacion es valida, `false` en caso contrario
     private boolean validaCombinacion(String cifras){
-        return cifras.matches(combinacionSecreta);
-    }
+        // (\d) se asegura de que cada digito sea un digito numerico
+        // (?!.*\1) se asegura de que no se repita el mismo digito
+        //{longitud} número de digitos únicos
+        return cifras.matches("(?:(\\d)(?!.*\\1)){" + getLongitud() + "}");
 
+    }
+    /// Realiza un intento para adivinar la clave secreta
+    /// @param intento La combinacion introducida por el usuario
+    /// @return El resultado del intento de adivinar la combinacion
+    /// @throws  MastermindException si la combinacion no es valida
     public Movimiento intento(String intento) {
+        if (!validaCombinacion(intento))
+            throw new MastermindException("La combinacion introducida no es valida");
+
+        int colocadas = 0;
+        int descolocadas = 0;
+        for (int i = 0; i < intento.length(); i++){
+
+          int pos = combinacionSecreta.indexOf(intento.charAt(i));
+          if (pos >= 0) {
+              if (pos == i) {
+                  colocadas++;
+              } else {
+                  descolocadas++;
+              }
+          }
+
+        }
+       return new Movimiento(intento, colocadas, descolocadas);
+
     }
 }

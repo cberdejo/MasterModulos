@@ -28,6 +28,6 @@ public class Individuo {
 
     @Override
     public String toString() {
-        return "I(" + this.cromosoma + ", " + this.fitness + ")";
+        return super.toString();
     }
 }
