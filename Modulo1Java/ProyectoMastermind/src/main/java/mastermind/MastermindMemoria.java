@@ -13,7 +13,7 @@ public class MastermindMemoria extends Mastermind{
     }
 
     public MastermindMemoria(){
-        super();
+        this(TAMANO_POR_DEFECTO);
         movmientos = new ArrayList<>();
 
     }

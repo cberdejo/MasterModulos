@@ -5,7 +5,7 @@ import java.util.Random;
 ///@Author Christian Berdejo
 /// @Version 1.0
 public class Mastermind {
-    private static final int TAMANO_POR_DEFECTO  = 4;
+    protected static final int TAMANO_POR_DEFECTO  = 4;
     private String combinacionSecreta;
     private static Random alea = new Random();
 
