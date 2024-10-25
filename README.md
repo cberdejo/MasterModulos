@@ -21,9 +21,10 @@
     <li><a href="#proyectoCoche">Proyecto Coche </a> [mandatory]</li>
     <li><a href="#proyectoGenetico">Proyecto Genético </a> [advanced]</li>
     <li><a href="#interfaces-ejemplos">Interfaces Ejemplos Clase </a> [class]</li>
-    <li><a href="#ProyectoMastermind">Proyecto Mastermind </a> [class] </li>
-    <li><a href="#ProyectoAlturasV1">Proyecto Alturas V1 </a> [class] </li>
-     <li><a href="#ProyectoTest">ProyectoTest </a> [class] </li>
+    <li><a href="#proyectoMastermind">Proyecto Mastermind </a> [class] </li>
+    <li><a href="#proyectoMastermindO">Proyecto Mastermind Optional </a> [lab] </li>
+    <li><a href="#proyectoAlturasV1">Proyecto Alturas V1 </a> [class] </li>
+    <li><a href="#proyectoTest">ProyectoTest </a> [lab] </li>
   </ul>
   <p><strong>Definiciones:</strong></p>
   <p><strong>[class]:</strong> Proyectos realizados en clase</p>
@@ -92,15 +93,18 @@
 <p>Ejemplo de proyectos dado en clase que explica interfaces con una clase de persona y amigos. Se dan varias formas de resolverlo para mostrar la utilidad de las interfaces </p>
 
 <h3 id="proyectoGenetico">ProyectoGenetico </h3>
-<p>En progreso... </p>
+<p> Práctica para utilizar y dominar el uso de interfaces, clases abstractas y herencias. Consiste en un algoritmo de recombinación que dado un número de pasos y un "fitness" para cada individuo busca maximizar el "fitness" para cada  individuo por cada generación. </p>
 
 <h3 id="proyectoMastermind">ProyectoMastermind </h3>
+<p>Consiste en un juego de adivinar una cadena de 4 números usando expresiones regulares y prácticando la creación y uso de excepciones</p>
+
+<h3 id="proyectoMastermindO">ProyectoMastermindO </h3>
+<p>Es una variante del <a href="#proyectoMastermind">ProyectoMastermind </a> pero usando el Wrapper Optional en vez de excepciones</p>
+
+<h3 id="proyectoAlturasV1"> ProyectoAlturasV1 </h3>
 <p>En progreso... </p>
 
-<h3 id="ProyectoAlturasV1"> ProyectoAlturasV1 </h3>
-<p>En progreso... </p>
-
-<h3 id="ProyectoTest"> ProyectoTest </h3>
+<h3 id="proyectoTest"> ProyectoTest </h3>
 <p> Práctica para prácticar el uso de Scanner y sus métodos </p>
 </details>
 

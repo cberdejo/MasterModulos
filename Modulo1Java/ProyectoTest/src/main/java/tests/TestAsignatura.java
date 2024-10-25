@@ -2,6 +2,7 @@ package tests;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class TestAsignatura {
     private List<Test> examenes;
@@ -10,26 +11,32 @@ public class TestAsignatura {
     private String nombreAsignatura;
     private final static double APROBADO = 5;
 
-    public TestAsignatura(String nombreAsignatura, double valorAciertos, double valorErrores, List<String> aciertos){
+    public TestAsignatura(String nombreAsignatura, double valorAciertos, double valorErrores, List<String> exms){
         this.nombreAsignatura = nombreAsignatura;
         this.valorAciertos= valorAciertos;
         this.valorErrores =valorErrores;
-        examenes = new ArrayList<>();
-
+        this.examenes = new ArrayList<>();
+        extraeDatos(exms);
 
     }
 
     public TestAsignatura(String nombreAsignatura, List<String> informacion){
-        this.nombreAsignatura = nombreAsignatura;
-        examenes = new ArrayList<>();
-
-
+       this(nombreAsignatura,1,0,informacion);
 
 
     }
 
-    private  void extraeDatos(List<String> info){
+    private  void extraeDatos(List<String> exams){
+        for (String exam: exams){
+            try (Scanner sc = new Scanner(exam)){
+                sc.useDelimiter("[:+]+");
+                String nombre = sc.next();
+                int aciertos = sc.nextInt();
+                int fallos = sc.nextInt();
 
+                examenes.add(new Test(nombre,aciertos,fallos));
+            }
+        }
     }
 
     public double notaMedia() {
@@ -48,3 +55,27 @@ public class TestAsignatura {
                 filter(examen -> examen.calificacion(valorAciertos,valorErrores)>=APROBADO).count();
     }
 }
+
+
+
+
+
+
+/*
+    private  void extraeDatos(List<String> info){
+        String infoString = info.toString();
+        try (Scanner sc = new Scanner(infoString.substring(1, infoString.length() - 1))) { // remove the surrounding brackets
+            sc.useDelimiter(", ");
+            while (sc.hasNext()) {
+                String[] nombreYNotas = sc.next().split(":");
+                String nombre = nombreYNotas[0].trim();
+                String[] notas = nombreYNotas[1].split("\\+");
+
+                int aciertos = Integer.parseInt(notas[0].trim());
+                int errores = Integer.parseInt(notas[1].trim());
+
+                examenes.add(new Test(nombre, aciertos, errores));
+            }
+        }
+    }
+*/
