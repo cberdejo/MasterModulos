@@ -5,13 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9053690e-85c3-47d2-a233-6542604bbe4d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/alturas/MayoresQue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/alturas/MenoresQue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/alturas/Mundo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/alturas/Pais.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/alturas/Seleccion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/alturas/EnContinente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectosBusesV1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectosBusesV1/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectosBusesV1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectosBusesV1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectosBusesV1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectosBusesV1/src/main/java/MainBuses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectosBusesV1/src/main/java/buses/Bus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectosBusesV1/src/main/java/buses/Coincide.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectosBusesV1/src/main/java/buses/Criterio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectosBusesV1/src/main/java/buses/EnMatricula.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectosBusesV1/src/main/java/buses/PorLinea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectosBusesV1/src/main/java/buses/Servicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectosBusesV1/src/main/java/data/buses.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alturas/MayoresQue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alturas/MayoresQue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alturas/MenoresQue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alturas/MenoresQue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alturas/Mundo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alturas/Mundo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alturas/Pais.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alturas/Pais.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProyectoGenetico/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoGenetico/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProyectoGenetico/src/main/java/genetico/Cromosoma.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoGenetico/src/main/java/genetico/Cromosoma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProyectoGenetico/src/main/java/genetico/Individuo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoGenetico/src/main/java/genetico/Individuo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProyectoGenetico/src/main/java/genetico/Poblacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoGenetico/src/main/java/genetico/Poblacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProyectoTest/src/main/java/tests/TestAsignatura.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoTest/src/main/java/tests/TestAsignatura.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +47,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2ntWiGaPrO4z3cx74P00as1XVez" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -40,13 +57,34 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.MainMundo.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/cberd/Desktop/Master/Modulo1Java/ProyectoAlturasV1"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cberd\Desktop\Master\Modulo1Java\ProyectoAlturasV1\src\main\java\data" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainMundo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainMundo" />
+      <module name="ProyectoAlturasV1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainMundo" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -57,5 +95,25 @@
       <updated>1729792980743</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.nio.file.NoSuchFileException" package="java.nio.file" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/alturas/Mundo.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/alturas/Mundo.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

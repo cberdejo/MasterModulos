@@ -23,7 +23,8 @@
     <li><a href="#interfaces-ejemplos">Interfaces Ejemplos Clase </a> [class]</li>
     <li><a href="#proyectoMastermind">Proyecto Mastermind </a> [class] </li>
     <li><a href="#proyectoMastermindO">Proyecto Mastermind Optional </a> [lab] </li>
-    <li><a href="#proyectoAlturasV1">Proyecto Alturas V1 </a> [class] </li>
+    <li><a href="#proyectoAlturasV1">Proyecto Alturas V1 </a> [mandatory] </li>
+    <li><a href="#proyectoBusesV1"> Proyecto Buses V1 </a> [class] </li>
     <li><a href="#proyectoTest">ProyectoTest </a> [lab] </li>
   </ul>
   <p><strong>Definiciones:</strong></p>
@@ -31,6 +32,7 @@
   <p><strong>[mandatory]:</strong> Proyectos obligatorios para aprobar la asignatura</p>
   <p><strong>[advanced]:</strong> Proyectos más avanzados o complicados</p>
   <p><strong>[lab]:</strong> Proyectos trabajados en laboratorio</p>
+  <p><strong>[challenge]:</strong> Los proyectos mas complicados, para nota extra.
 </details>
 
 <details>
@@ -102,7 +104,10 @@
 <p>Es una variante del <a href="#proyectoMastermind">ProyectoMastermind </a> pero usando el Wrapper Optional en vez de excepciones</p>
 
 <h3 id="proyectoAlturasV1"> ProyectoAlturasV1 </h3>
-<p>En progreso... </p>
+<p>Se práctica las interfaces,  lectura de ficheros, manejo de expeciones</p>
+
+<h3 id="proyectoBusesV1"> ProyectoBusesV1 </h3>
+<p>Se práctica las interfaces,  lectura y escritura de ficheros, manejo de expeciones</p>
 
 <h3 id="proyectoTest"> ProyectoTest </h3>
 <p> Práctica para prácticar el uso de Scanner y sus métodos </p>

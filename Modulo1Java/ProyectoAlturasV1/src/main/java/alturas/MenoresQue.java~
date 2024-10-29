@@ -7,8 +7,8 @@ public class MenoresQue implements  Seleccion{
     public MenoresQue(double altura){
         this.altura = altura;
     }
-    /// comprobar que la altura del pais es menor que la altura dada
-    /// @param pais pais a comprobar
+
+    /// @param pais
     @Override
     public boolean test(Pais pais) {
         return pais.altura() < altura;

@@ -25,7 +25,7 @@ public class Individuo {
     }
 
     public Cromosoma getCromosoma() {
-        return new Cromosoma(this.cromosoma); // Devuelve una copia del cromosoma
+        return cromosoma;
     }
     public double getFitness() {
         return fitness;

@@ -9,7 +9,7 @@ public class TestAsignatura {
     private double valorAciertos;
     private double valorErrores;
     private String nombreAsignatura;
-    private final static double APROBADO = 5;
+    private final static double APROBADO = 5.0;
 
     public TestAsignatura(String nombreAsignatura, double valorAciertos, double valorErrores, List<String> exms){
         this.nombreAsignatura = nombreAsignatura;

@@ -1,4 +1,0 @@
-package alturas;
-
-public record Pais(String pais, String continente, double altura) {
-}

@@ -1,0 +1,15 @@
+package alturas;
+/// @Author: Christian Berdejo
+/// @Version 1.0
+public class EnContinente implements Seleccion {
+
+    private String texto;
+    //// @param texto texto que indica el continente
+    public EnContinente(String texto) {
+        this.texto = texto;
+    }
+    @Override
+    public boolean test(Pais pais) {
+       return pais.continente().equalsIgnoreCase(texto);
+    }
+}

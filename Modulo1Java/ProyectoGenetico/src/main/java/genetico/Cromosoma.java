@@ -23,17 +23,18 @@ public class Cromosoma {
 
     }
 
+
     /// Crea un Cromosoma copia de otro
     /// @param cromosoma el cromosoma que se copia
-    public void Cromosoma (Cromosoma cromosoma){
-        cromosoma = this;
+    public Cromosoma (Cromosoma cromosoma){
+        this.datos = Arrays.copyOf(cromosoma.datos, cromosoma.datos.length);
     }
 
     /// Devuelve el gen de la posicion
     /// @return el gen en la posicón posicion de `this`
     /// @throws IllegalArgumentException si la posicion no es valida
     public int getGen(int posicion){
-        if (posicion < 0 || posicion > this.datos.length) throw new IllegalArgumentException();
+        if (posicion < 0 || posicion >= this.datos.length) throw new IllegalArgumentException("Posición fuera de rango");
 
         return this.datos[posicion];
     }
@@ -58,7 +59,7 @@ public class Cromosoma {
     public void mutar(double probabilidad){
         for (int i = 0; i < this.datos.length; i++){
             if (gna.nextDouble() < probabilidad){
-                this.datos[i] = gna.nextInt(2);
+                this.datos[i] = (this.datos[i] == 0) ? 1 : 0;
             }
         }
 

@@ -32,7 +32,7 @@ public class Poblacion {
     /// @throws IllegalArgumentException si la posicion no es valida
     /// @return el individuo en la posicion pos
     public Individuo getIndividuo(int pos){
-        if (pos < 0 || pos >= this.individuos.length) throw new IllegalArgumentException();
+        if (pos < 0 || pos > this.individuos.length) throw new IllegalArgumentException();
         return this.individuos[pos];
     }
 
