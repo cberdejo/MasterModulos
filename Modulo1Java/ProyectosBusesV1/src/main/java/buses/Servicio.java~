@@ -44,7 +44,7 @@ public class Servicio {
             bus.setCodLinea(codLinea);
             return Optional.of(bus);
         } catch (InputMismatchException e) {
-            System.err.println("Error, faltan datos en " + linea);
+            System.err.println("Error, en dato numérico en " + linea);
             return Optional.empty();
         } catch (NoSuchElementException e) {
             System.err.println("Error, faltan datos en " + linea);

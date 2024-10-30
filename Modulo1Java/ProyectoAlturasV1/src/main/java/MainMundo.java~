@@ -1,7 +1,4 @@
-import alturas.EnContinente;
-import alturas.MenoresQue;
-import alturas.Pais;
-import alturas.Mundo;
+import alturas.*;
 
 import java.io.IOException;
 
@@ -12,7 +9,7 @@ public class MainMundo {
 
         double altura = 1.70;
         System.out.println("Paises menores de " + altura + ": ");
-        paises.selecciona(new MenoresQue(altura)).forEach(pais -> System.out.println("Menor que " + altura + ": " + pais));
+        paises.selecciona(new MayoresQue(altura)).forEach(pais -> System.out.println("Menor que " + altura + ": " + pais));
 
         String continente = "Europe";
         System.out.println("Paises en " + continente + ": ");

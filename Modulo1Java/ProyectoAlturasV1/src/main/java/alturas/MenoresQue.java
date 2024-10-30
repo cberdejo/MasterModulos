@@ -4,7 +4,12 @@ package alturas;
 public class MenoresQue implements  Seleccion{
 
     private double altura;
+    /// @param altura altura a comprobar
+    /// @throws IllegalArgumentException si la altura es negativa
     public MenoresQue(double altura){
+        if (altura < 0) {
+            throw new IllegalArgumentException("Altura no puede ser negativa");
+        }
         this.altura = altura;
     }
     /// comprobar que la altura del pais es menor que la altura dada

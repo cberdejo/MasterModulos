@@ -1,8 +1,6 @@
 package alturas;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 
 
@@ -31,16 +29,20 @@ public class Mundo {
                 Optional<Pais> p = stringAPais(sc.nextLine());
                 p.ifPresent(pais -> paises.add(pais));
             }
-            System.out.println(paises);
 
         }
 
     }
+
+    /// Crea un pais a partir de una linea
+    /// @param linea linea del fichero
+    /// @return Optional con el pais
     private Optional<Pais> stringAPais(String linea) {
 
 
         try (Scanner scLinea = new Scanner(linea)){
             scLinea.useDelimiter("[,]+");
+            scLinea.useLocale(Locale.US); //Las comas son con "." no con ","
             String nombrePais = scLinea.next();
             String continente = scLinea.next();
             double altura = scLinea.nextDouble();

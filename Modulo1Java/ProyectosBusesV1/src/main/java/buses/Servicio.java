@@ -14,6 +14,10 @@ public class Servicio {
         this.ciudad = ciudad;
     }
 
+    public List<Bus> getBuses() {
+        return buses;
+    }
+
     public List<Bus>filtra (Criterio criterio){
         return buses.stream().filter(criterio::esSeleccionable).toList();
     }
