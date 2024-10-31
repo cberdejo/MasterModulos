@@ -36,8 +36,10 @@
 </details>
 
 <details>
-  <summary>Módulo 2</summary>
-  <ul>
+  <summary><code> Laboratorio Abierto: Casos Prácticos en Ingeniería y Ciencia de Datos e Inteligencia Artificial </code></summary>
+ <ul>
+    <li><a href="#proyectoholamundo">Proyecto Hola Mundo</a> [class]</li>
+  </ul>
   
 </details>
 
@@ -114,7 +116,11 @@
 <p>Ejemplo de java POO en las diapositivas de clases</p>
 </details>
 
-
+<details>
+<summary>Laboratorio Abierto: Casos Prácticos en Ingeniería y Ciencia de Datos e Inteligencia Artificial</summary>
+  <h3 id="proyectoholamundo"> ProyectoHolaMundo </h3>
+  <p>Primer proyecto de python: Se práctica haciendo un merge con diccionarios </p>
+</details>
 
 
 
