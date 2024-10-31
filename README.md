@@ -10,8 +10,6 @@
     <li><a href="#proyectojarras">Proyecto Jarras </a> [mandatory]</li>
     <li><a href="#proyectonpiv1">Proyecto NPI V1 </a> [lab]</li>
     <li><a href="#proyectonpiv2">Proyecto NPI V2 </a> [lab]</li>
-    <li><a href="#proyectorectas">Proyecto Rectas </a> [advanced]</li>
-    <li><a href="#proyectouniversov1">Proyecto Universo V1</a> [class]</li>
     <li><a href="#proyectourna">Proyecto Urna </a> [mandatory]</li>
     <li><a href="#proyectoLibreriaV0">Proyecto Librería V0 </a> [class]</li>
     <li><a href="#proyectoLibreriaV1">Proyecto Librería V1 </a> [class]</li>
@@ -24,8 +22,10 @@
     <li><a href="#proyectoMastermind">Proyecto Mastermind </a> [class] </li>
     <li><a href="#proyectoMastermindO">Proyecto Mastermind Optional </a> [lab] </li>
     <li><a href="#proyectoAlturasV1">Proyecto Alturas V1 </a> [mandatory] </li>
+    <li><a href="#proyectoAlturasV2">Proyecto Alturas V2 </a> [mandatory] </li>
     <li><a href="#proyectoBusesV1"> Proyecto Buses V1 </a> [class] </li>
     <li><a href="#proyectoTest">ProyectoTest </a> [lab] </li>
+    <li><a href="#temas">Temas</a> [class] </li>
   </ul>
   <p><strong>Definiciones:</strong></p>
   <p><strong>[class]:</strong> Proyectos realizados en clase</p>
@@ -64,11 +64,6 @@
 <h3 id="proyectonpiv2">ProyectoNPIV2</h3>
 <p>Se utilizan operadores y programación funcional para simplificar la clase, se añade la raiz como operación </p>
 
-<h3 id="proyectorectas">ProyectoRectas</h3>
-<p>En progreso...</p>
-
-<h3 id="proyectouniversov1">ProyectoUniversoV1</h3>
-<p>En progreso...</p>
 
 <h3 id="proyectourna">ProyectoUrna</h3>
 <p>Típico problema en el que se tiene una urna y se pueden añadir bolas y obtener de forma aleatoria una de las bolas</p>
@@ -91,7 +86,7 @@
 <h3 id ="proyectoCoche">ProyectoCoche </h3>
 <p> Proyecto para practicar herencia en el que hay dos clases Coche y CocheImportado. Un CocheImportado redefine el método de calcular su precio total al que se le añade una homologación</p>
      
-<h3 id="#interfaces-ejemplos">InterfacesEjemplosClase </h3>
+<h3 id="interfaces-ejemplos">InterfacesEjemplosClase </h3>
 <p>Ejemplo de proyectos dado en clase que explica interfaces con una clase de persona y amigos. Se dan varias formas de resolverlo para mostrar la utilidad de las interfaces </p>
 
 <h3 id="proyectoGenetico">ProyectoGenetico </h3>
@@ -106,11 +101,17 @@
 <h3 id="proyectoAlturasV1"> ProyectoAlturasV1 </h3>
 <p>Se práctica las interfaces,  lectura de ficheros, manejo de expeciones</p>
 
+<h3 id="proyectoAlturasV2"> ProyectoAlturasV2 </h3>
+<p>Amplia la práctica de alturas V1 para añadir la práctica de conjuntos ordenados</p>
+
 <h3 id="proyectoBusesV1"> ProyectoBusesV1 </h3>
 <p>Se práctica las interfaces,  lectura y escritura de ficheros, manejo de expeciones</p>
 
 <h3 id="proyectoTest"> ProyectoTest </h3>
 <p> Práctica para prácticar el uso de Scanner y sus métodos </p>
+
+<h3 id="temas">Temas </h3> 
+<p>Ejemplo de java POO en las diapositivas de clases</p>
 </details>
 
 
