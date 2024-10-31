@@ -38,7 +38,7 @@
 <details>
   <summary><code> Laboratorio Abierto: Casos Prácticos en Ingeniería y Ciencia de Datos e Inteligencia Artificial </code></summary>
  <ul>
-    <li><a href="#proyectoholamundo">Proyecto Hola Mundo</a> [class]</li>
+    <li><a href="#proyectoholamundo">Proyecto Hola Mundo</a> </li>
   </ul>
   
 </details>
@@ -119,7 +119,7 @@
 <details>
 <summary>Laboratorio Abierto: Casos Prácticos en Ingeniería y Ciencia de Datos e Inteligencia Artificial</summary>
   <h3 id="proyectoholamundo"> ProyectoHolaMundo </h3>
-  <p>Primer proyecto de python: Se práctica haciendo un merge con diccionarios </p>
+  <p>Primer proyecto de python donde se introduce python haciendo un merge con dicionarios </p>
 </details>
 
 
