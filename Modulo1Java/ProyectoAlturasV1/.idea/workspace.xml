@@ -5,25 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9053690e-85c3-47d2-a233-6542604bbe4d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ProyectoAlturasV2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoAlturasV2/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoAlturasV2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoAlturasV2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoAlturasV2/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoAlturasV2/src/main/java/MainMundo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoAlturasV2/src/main/java/alturas/EnContinente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoAlturasV2/src/main/java/alturas/MayoresQue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoAlturasV2/src/main/java/alturas/MenoresQue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoAlturasV2/src/main/java/alturas/Mundo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoAlturasV2/src/main/java/alturas/Pais.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoAlturasV2/src/main/java/alturas/Seleccion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoWordle/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoWordle/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoWordle/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoWordle/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoWordle/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProyectoAlturasV2/src/main/java/MainMundo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoAlturasV2/src/main/java/MainMundo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProyectoAlturasV2/src/main/java/alturas/Pais.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoAlturasV2/src/main/java/alturas/Pais.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

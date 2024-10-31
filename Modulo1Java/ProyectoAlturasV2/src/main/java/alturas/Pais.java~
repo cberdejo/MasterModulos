@@ -7,12 +7,7 @@ public record Pais(String pais, String continente, double altura) implements Com
     /// Compara dos paises segun su altura
     @Override
     public int compareTo(Pais o) {
-        int comp =  Double.compare(altura, o.altura);
-        if (comp == 0) {
-            return pais.compareTo(o.pais);
-        }else {
-            return comp;
-        }
+        return Double.compare(altura, o.altura);
     }
 
 
