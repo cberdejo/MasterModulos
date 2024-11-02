@@ -21,6 +21,7 @@
     <li><a href="#interfaces-ejemplos">Interfaces Ejemplos Clase </a> [class]</li>
     <li><a href="#proyectoMastermind">Proyecto Mastermind </a> [class] </li>
     <li><a href="#proyectoMastermindO">Proyecto Mastermind Optional </a> [lab] </li>
+    <li><a href="#proyectoWordle">ProyectoWordle </a> [lab] </li>
     <li><a href="#proyectoAlturasV1">Proyecto Alturas V1 </a> [mandatory] </li>
     <li><a href="#proyectoAlturasV2">Proyecto Alturas V2 </a> [mandatory] </li>
     <li><a href="#proyectoBusesV1"> Proyecto Buses V1 </a> [class] </li>
@@ -99,6 +100,9 @@
 
 <h3 id="proyectoMastermindO">ProyectoMastermindO </h3>
 <p>Es una variante del <a href="#proyectoMastermind">ProyectoMastermind </a> pero usando el Wrapper Optional en vez de excepciones</p>
+
+<h3 id="proyectoWordle">ProyectoWordle </h3>
+<p>Se crea el juego wordle. Se práctica lectura y escitura de ficheros e interfaces selladas</p>
 
 <h3 id="proyectoAlturasV1"> ProyectoAlturasV1 </h3>
 <p>Se práctica las interfaces,  lectura de ficheros, manejo de expeciones</p>

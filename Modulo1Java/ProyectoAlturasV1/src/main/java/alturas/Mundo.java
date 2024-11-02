@@ -49,6 +49,8 @@ public class Mundo {
             return Optional.of( new  Pais(nombrePais, continente, altura));
 
         } catch (NoSuchElementException e) {
+            //No se especifica nada de excepciones, por lo que la lina no es válida, se ignora y ya.
+
             return Optional.empty();
         }
 

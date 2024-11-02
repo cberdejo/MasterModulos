@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9053690e-85c3-47d2-a233-6542604bbe4d" name="Changes" comment="" />
+    <list default="true" id="9053690e-85c3-47d2-a233-6542604bbe4d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ProyectoWordle/GuiWordle.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoWordle/data/palabras.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoWordle/src/main/java/MainWordle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoWordle/src/main/java/wordle/Fallo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoWordle/src/main/java/wordle/Movimiento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoWordle/src/main/java/wordle/Respuesta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoWordle/src/main/java/wordle/Wordle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoWordle/src/main/java/wordle/WordleM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alturas/Mundo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alturas/Mundo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProyectoWordle/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoWordle/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProyectoWordle/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoWordle/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
