@@ -1,0 +1,4 @@
+package wordle;
+
+public record Movimiento(String mensaje, String resultado) implements Respuesta {
+}

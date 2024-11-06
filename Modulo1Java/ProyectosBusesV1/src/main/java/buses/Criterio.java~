@@ -1,5 +1,0 @@
-package buses;
-
-public interface Criterio {
-    public boolean esSeleccionable
-}

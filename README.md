@@ -25,7 +25,9 @@
     <li><a href="#proyectoAlturasV1">Proyecto Alturas V1 </a> [mandatory] </li>
     <li><a href="#proyectoAlturasV2">Proyecto Alturas V2 </a> [mandatory] </li>
     <li><a href="#proyectoBusesV1"> Proyecto Buses V1 </a> [class] </li>
-    <li><a href="#proyectoTest">ProyectoTest </a> [lab] </li>
+    <li><a href="#proyectoTest">Proyecto Test </a> [lab] </li>
+    <li><a href="#proyectoIndicePalabrasV1">proyecto Indice Palabras V1 </a> [mandatory] </li>
+    <li><a href="#proyectoAmigoInvisible">Proyecto amigo invisible </a> [advanced]</li>
     <li><a href="#temas">Temas</a> [class] </li>
   </ul>
   <p><strong>Definiciones:</strong></p>
@@ -115,6 +117,11 @@
 
 <h3 id="proyectoTest"> ProyectoTest </h3>
 <p> Práctica para prácticar el uso de Scanner y sus métodos </p>
+
+<h3 id="proyectoIndicePalabrasV1"><h3> ProyectoIndicePalabrasV1 </h3>
+<p>Práctica de <code>Map </code> y <code> Set</code> en el que se ordenan y cuentan  las palabras de un trabalenguas.</p>
+<h3 id="proyectoAmigoInvisible"><h3> ProyectoAmigoInvisible </h3>
+<p>En progreso...</p>
 
 <h3 id="temas">Temas </h3> 
 <p>Ejemplo de java POO en las diapositivas de clases</p>
