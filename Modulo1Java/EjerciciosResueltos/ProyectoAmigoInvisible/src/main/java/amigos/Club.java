@@ -1,9 +1,12 @@
 package amigos;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.nio.file.Path;
 import java.util.*;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 /// @Author: Christian Berdejo Sánchez
 /// @Version 1.0
@@ -53,28 +56,61 @@ public class Club {
 
     ///De forma aleatoria, se asigna a cada persona un amigo invisible.
     protected void hacerAmigos(){
-        List<Integer> posAmigos = new ArrayList<>();
-        for (int i = 0; i < socios.size(); i++){
-            posAmigos.add(i);
-        }
+        if (socios.size() < 2)throw new AmigoException("No hay suficientes socios para hacer amigos");
+
+        List<Integer> posAmigos = new ArrayList<>(Stream.iterate(0, x -> x < socios.size(), x -> x + 1).toList());
 
         do{
         Collections.shuffle(posAmigos);
-
-        } while(coincidePosicion(posAmigos));
+        } while(hayCoincidencias(posAmigos));
 
         List<Persona> listaSocios = socios.stream().toList();
         //Continuar
 
+        for (int i = 0; i < socios.size(); i++){
+            listaSocios.get(i).setAmigo(listaSocios.get(posAmigos.get(i)));
+        }
+
+
     }
 
     ///Devuelve verdadero si la lista de posiciones de amigos coincide con la lista de posiciones de socios
-    private boolean coincidePosicion(List<Integer> posAmigos) {
+    /// @param  posAmigos lista de posiciones de amigos
+    /// @return verdadero si la lista de posiciones de amigos coincide con la lista de posiciones de socios
+    private boolean hayCoincidencias(List<Integer> posAmigos) {
         for (int i = 0; i < socios.size(); i++){
             if (posAmigos.get(i) == i){
                 return true;
             }
         }
         return false;
+    }
+    /// Presenta los socios en el fichero de salida
+    /// @param  fSalida fichero de salida
+    public void presentaAmigos(String fSalida) throws FileNotFoundException{
+        try (PrintWriter pw = new PrintWriter(fSalida)) {
+            presentaAmigos(pw);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("ERROR: falta el nombre del fichero");
+        } catch (IOException e) {
+            System.out.println("ERROR: no se puede escribir el fichero");
+        }
+    }
+    /// Imprime las lineas de cada socio
+    /// @param  pw fichero de salida
+    public void presentaAmigos(PrintWriter pw){
+
+        for (Persona p : socios){
+            pw.println(p);
+        }
+    }
+
+    @Override
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        for (Persona p : socios){
+            sb.append(p.toString()).append("\n");
+        }
+        return sb.toString();
     }
 }
