@@ -1,2 +1,73 @@
-/idea
-.venv
+# Archivos generados por el sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de IntelliJ IDEA y PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+target/
+
+# Archivos de Visual Studio Code
+.vscode/
+
+# Archivos compilados de Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Archivos y carpetas de Maven y Gradle
+.mvn/
+mvnw
+mvnw.cmd
+.gradle/
+build/
+!gradle-wrapper.jar
+
+# Archivos de dependencias de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Entornos virtuales de Python
+env/
+venv/
+.venv/
+
+# Archivos de configuración de entorno
+.env
+.env.*
+
+# Archivos de logs
+*.log
+
+# Archivos de cobertura y pruebas
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+.tox/
+.pytest_cache/
+nosetests.xml
+test-results/
+reports/
+junit-reports/
+htmlcov/
+
+# Archivos de caches y dependencias
+.cache/
+*.egg-info/
+*.eggs/
+dist/
+build/
+pip-log.txt
+pytest-*.xml
+
+# Archivos de configuración de IDEs
+*.swp
+*.swo
+*.swn

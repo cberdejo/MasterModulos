@@ -50,6 +50,7 @@
   <summary> Laboratorio Abierto: Casos Prácticos en Ingeniería y Ciencia de Datos e Inteligencia Artificial </summary>
  <ul>
     <li><a href="#proyectoholamundo">Proyecto Hola Mundo</a> </li>
+    <li><a href="#proyectoFibonacci">Proyecto Fibonacci</a> </li>
   </ul>
   
 </details>
@@ -183,6 +184,9 @@
 <summary><code>Laboratorio Abierto: Casos Prácticos en Ingeniería y Ciencia de Datos e Inteligencia Artificial</code></summary>
   <h3 id="proyectoholamundo"> ProyectoHolaMundo </h3>
   <p>Primer proyecto de python donde se introduce python haciendo un merge con dicionarios </p>
+  <h3 id="proyectoFibonacci">ProyectoFibonacci </h3>
+  <p>Proyecto de python en el que se hace de distintas formas el problema de obtener la cifra n de la sucesión de Fibonacci </p>
+
 </details>
 
 
