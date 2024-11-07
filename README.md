@@ -74,7 +74,16 @@
 <p>Se pueden ver los PDFs con los ejercicios</p>
 
 <h2 id="resueltos">Ejercicios resueltos</h2>
-<p>Resuelve los ejercicios que se encuentran en la relación de ejercicios. Entre ellos se encuentran: </p>
+
+<p>Resuelve los ejercicios que se encuentran en la relación de ejercicios. En este caso no tienen dependencias externas por lo que valdria con compiarlos y ejecutarlos con los siguientes comandos:</p>
+<p> 
+  <code>javac Ejemplo.java</code>
+</p>
+<p> 
+<code> java Ejemplo</code>
+</p>
+Los proyectos son: </p>
+
 <ul>
 <li>
   <h3 id="proyecto1punto">Proyecto1Punto</h3>
@@ -182,10 +191,14 @@
 </details>
 <details>
 <summary><code>Laboratorio Abierto: Casos Prácticos en Ingeniería y Ciencia de Datos e Inteligencia Artificial</code></summary>
-  <h3 id="proyectoholamundo"> ProyectoHolaMundo </h3>
-  <p>Primer proyecto de python donde se introduce python haciendo un merge con dicionarios </p>
-  <h3 id="proyectoFibonacci">ProyectoFibonacci </h3>
-  <p>Proyecto de python en el que se hace de distintas formas el problema de obtener la cifra n de la sucesión de Fibonacci </p>
+<h2>Instalación y Uso</h2>
+ <p>1. <code>pip install -r requirements-dev.txt</code> para continuar o modificar los proyectos. Para ejectuarlos simplemente usar  <code>pip install -r requirements.txt</code> </p>
+ <p>2. Ejecutar los ficheros <code>python nombre_archivo.py</code>. En caso de haber un main, ejecutarlo. </p>
+<h2> Proyectos </h2>
+<h3 id="proyectoholamundo"> ProyectoHolaMundo </h3>
+<p>Primer proyecto de python donde se introduce python haciendo un merge con dicionarios </p>
+<h3 id="proyectoFibonacci">ProyectoFibonacci </h3>
+<p>Proyecto de python en el que se hace de distintas formas el problema de obtener la cifra n de la sucesión de Fibonacci </p>
 
 </details>
 

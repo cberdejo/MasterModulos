@@ -22,10 +22,15 @@ public class ClubParejas extends Club{
 
     }
 
-    /// Crea un socio a partir de una cadena
-    /// @param  nombre nombre del socio
+
+    @Override
     protected void creaSocioDesdeString(String nombre){
         socios.add(new Persona(nombre));
+
+    }
+
+    @Override
+    protected void hacerAmigos() {
 
     }
 }
