@@ -30,10 +30,11 @@ def fibonacci_recursive(n:int) -> int:
         raise ValueError("n must be greater tan or equal to zero.")
     if n < 2:
         return n
-    else:
-        return  fibonacci_recursive(n-1) + fibonacci_recursive(n-2)
-
-
+    if n in cache:
+        return cache[n]
+    nth = fibonacci_recursive(n-1) + fibonacci_recursive(n-2)
+    cache[n] = nth
+    return nth
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
