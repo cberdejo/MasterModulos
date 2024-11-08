@@ -5,22 +5,20 @@ import java.util.Collection;
 import java.util.List;
 
 public abstract class Indice {
-    private  List<String> texto;
+    private final List<String> texto;
 
-    public List<String> getTexto() {
-        texto = new ArrayList<>();
+    public Indice() {
+        this.texto = new ArrayList<>();
     }
-    public Indice(List<String> texto) {
-        this.texto = texto;
+
+    public List<String> getTexto() { // Cambiado para devolver la lista
+        return texto;
     }
 
     public void agregarLinea(String texto) {
-        this.texto.add(texto);}
+        this.texto.add(texto);
     }
 
-    public  void resolver(String delimitadores, Collection<String>
-            noSignificativas) {
-    }
-
-
+    public abstract void resolver(String delimitadores, Collection<String> noSignificativas);
+    public abstract void presentarIndiceConsola();
 }
