@@ -41,7 +41,7 @@ public class Persona  implements Comparable<Persona>{
     @Override
     public String toString() {
         String regalado = (amigo == null) ? "sin amigo" : amigo.getNombre();
-        return String.format("%s :le regala a: %s", getNombre(), regalado );
+        return String.format("%s : le regala a %s", getNombre(), regalado );
     }
 
 

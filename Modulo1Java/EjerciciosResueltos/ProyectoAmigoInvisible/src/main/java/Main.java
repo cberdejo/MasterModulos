@@ -11,8 +11,8 @@ public class Main {
 		ClubManager clubM = new ClubManager(new ClubParejas());
 		try {
 			clubM
-				.setEntrada("data/socios.txt", "[ ,\\-;]+")
-//				.setEntrada("data/socios.txt", "[ ,;]+")
+//				.setEntrada("data/socios.txt", "[ ,\\-;]+")
+				.setEntrada("data/socios.txt", "[ ,;]+")
 				.setConsola(true)
 // 				.setSalida("data/salida.txt")
 				.build();

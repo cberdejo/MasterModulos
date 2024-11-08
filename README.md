@@ -68,12 +68,12 @@
 <details>
 <summary><code>Introducción a la Programación orientada a objetos con Java</code></summary>
 <h2 id="diapositivas">Diapositivas</h2>
-<p>Se pueden consultar aquí PDFs de todas las diapoisitvas y están descargado los ejemplos de los temas</p>
+<p>Se pueden consultar aquí PDFs de todas las diapoisitvas y están descargado los ejemplos de los temas.</p>
 
 <h2 id="ejercicios">Relación de ejercicios</h2>
-<p>Se pueden ver los PDFs con los ejercicios</p>
+<p>Se pueden ver los PDFs con los ejercicios.</p>
 
-<h2 id="resueltos">Ejercicios resueltos</h2>
+<h2 id="resueltos">Ejercicios resueltos.</h2>
 
 <p>Resuelve los ejercicios que se encuentran en la relación de ejercicios. En este caso no tienen dependencias externas por lo que valdria con compiarlos y ejecutarlos con los siguientes comandos:</p>
 <p> 
@@ -87,7 +87,7 @@ Los proyectos son: </p>
 <ul>
 <li>
   <h3 id="proyecto1punto">Proyecto1Punto</h3>
-  <p>Algunos ejemplos que hicimos en clase. Posee una clase Punto básica y su implementación</p>
+  <p>Algunos ejemplos que hicimos en clase. Posee una clase Punto básica y su implementación.</p>
 </li>
 <li>
   <h3 id="proyectoestadistica">ProyectoEstadistica</h3>
@@ -196,9 +196,9 @@ Los proyectos son: </p>
  <p>2. Ejecutar los ficheros <code>python nombre_archivo.py</code>. En caso de haber un main, ejecutarlo. </p>
 <h2> Proyectos </h2>
 <h3 id="proyectoholamundo"> ProyectoHolaMundo </h3>
-<p>Primer proyecto de python donde se introduce python haciendo un merge con dicionarios </p>
+<p>Primer proyecto de python donde se introduce python haciendo un merge con dicionarios. </p>
 <h3 id="proyectoFibonacci">ProyectoFibonacci </h3>
-<p>Proyecto de python en el que se hace de distintas formas el problema de obtener la cifra n de la sucesión de Fibonacci </p>
+<p>Proyecto de python en el que se hace de distintas formas el problema de obtener la cifra n de la sucesión de Fibonacci. </p>
 
 </details>
 

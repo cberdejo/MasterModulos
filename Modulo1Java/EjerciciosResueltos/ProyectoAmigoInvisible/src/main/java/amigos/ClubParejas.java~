@@ -67,7 +67,7 @@ public class ClubParejas extends Club{
         return IntStream.range(0, socios.size())
                 .anyMatch(i -> posAmigos.get(i) == i
                         || parejas.contains(new Pareja(socios.get(i), socios.get(posAmigos.get(i)))));
-
+       
 
     }
 }
