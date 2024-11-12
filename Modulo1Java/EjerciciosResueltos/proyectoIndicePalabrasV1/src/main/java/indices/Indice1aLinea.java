@@ -3,7 +3,6 @@ package indices;
 import java.util.*;
 import java.util.stream.IntStream;
 ///@Author Christian Berdejo
-
 ///@Version 1.0
 public class Indice1aLinea extends Indice {
     private Map<String, Integer> palabras;

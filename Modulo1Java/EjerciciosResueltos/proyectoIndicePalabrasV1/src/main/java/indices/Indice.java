@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+///@Author Christian Berdejo
+///@Version 1.0
 public abstract class Indice {
     private final List<String> texto;
 
