@@ -1,9 +1,3 @@
 [submodule "Modulo1Java/Challenges"]
 	path = Modulo1Java/Challenges
 	url = https://github.com/cberdejo/ChallengesJavaPOO
-[submodule "Modulo16Lab/Modulo16Lab/Fibonacci/proyectoFibonacciFork"]
-	path = Modulo16Lab/Modulo16Lab/Fibonacci/proyectoFibonacciFork
-	url = https://github.com/cberdejo/proyectoFibonacciFork
-[submodule "Modulo16Lab/Modulo16Lab/Modulo16Lab/Fibonacci/proyectoFibonacci"]
-	path = Modulo16Lab/Modulo16Lab/Modulo16Lab/Fibonacci/proyectoFibonacci
-	url = https://github.com/cberdejo/Proyecto-Fibonacci
