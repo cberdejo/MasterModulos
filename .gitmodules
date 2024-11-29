@@ -8,3 +8,7 @@
 [submodule "Modulo16Lab/Fibonacci/proyectoFibonacci"]
     path = Modulo16Lab/Fibonacci/proyectoFibonacci
     url = https://github.com/cberdejo/Proyecto-Fibonacci
+    
+[submodule "Modulo16Lab/ConectionOracle/conn"]
+    path = Moudlo16Lab/ConectionOracle/conn
+    url= https://github.com/cberdejo/OracleSqlConnectionExampl
