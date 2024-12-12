@@ -47,6 +47,25 @@
   
 </details>
 <details>
+<summary> Gestión de Datos, bases de datos relacionales </summary>
+  <ul>
+    <li> <a href="#consultas"> Consultas </a></li>
+    <li> <a href="#mod3diapo">Diapositivas</li>
+    <li> <a href="#database_system">Database_System </li>
+  </ul>
+</details>
+
+<details>
+
+<summary> Gestión de Datos, bases de datos NoSQL </summary>
+  <ul>
+    <li>Consultas</li>
+    <li>Diapositivas</li>
+    <li>Database_System </li>
+  </ul>
+</details>
+
+<details>
   <summary> Laboratorio Abierto: Casos Prácticos en Ingeniería y Ciencia de Datos e Inteligencia Artificial </summary>
  <ul>
     <li><a href="#proyectoholamundo">Proyecto Hola Mundo</a> </li>
@@ -189,6 +208,34 @@ Los proyectos son: </p>
 </ul>
 
 </details>
+</details>
+<details>
+<summary><code>Gestión de Datos, bases de datos relacionales</code></summary>
+   <h2 id="consultas"> Consultas </h2>
+    <p>
+   Ejercicios de consultas con MySql. Hay diapositivas con ejercicios propuestos y soluciones.
+    </p>
+    <ul>
+    <h3>Basica </h3>
+    <p>Entrega con consultas básicas (LEFT JOIN, ORDER BY, ...) </p>
+    <h3>Avanzada</h3>
+    <p> Entrega con consultas avanzadas (GROUP BY, negaciones, subconsultas,...).</p>
+    <h3>Clase</h3>
+    <p>Diapositivas con consultas  básicas y avanzadas pero hechas en clase</p>
+    <h3>Trigger</h3>
+    <p>Práctica del uso de Triggers</p>
+    </ul>
+    <h2 id="mod3diapo">Diapositivas</h2>
+    <p>Todas las diapositivas con el aprendizaje de MySQL</p>
+    <h2 id="database_system">Database_System </h2>
+    <p>Un libro sobre el diseño de modelos básicos de bases de datos relacionales, algebra relacional,... </p>
+</details>
+
+<details>
+<summary><code>Gestión de Datos, bases de datos NoSQL</code></summary>
+
+</details>
+
 <details>
 <summary><code>Laboratorio Abierto: Casos Prácticos en Ingeniería y Ciencia de Datos e Inteligencia Artificial</code></summary>
 <h2>Instalación y Uso</h2>
@@ -199,8 +246,14 @@ Los proyectos son: </p>
 <p>Primer proyecto de python donde se introduce python haciendo un merge con dicionarios. </p>
 <h3 id="proyectoFibonacci">ProyectoFibonacci </h3>
 <p>Proyecto de python en el que se hace de distintas formas el problema de obtener la cifra n de la sucesión de Fibonacci. </p>
+<h3>ConnectionBd </h3>
+<p>Usando SQL modeler, prueba a conectarse a oracle</p>
+<h3> Crud projects </h3>
+<p>Proyecto crud con SQLlitle, sql model y .... Permite crear e insertar paquetes y además se aprende a paquetizar un proyecto. </p>
+<h3>Crud music</h3>
+<p> Proyecto con Postgred SQL (usando docker) sql model y  ... Proyecto para crear listas de música e insertar canciones.
 
-</details>
+
 
 
 

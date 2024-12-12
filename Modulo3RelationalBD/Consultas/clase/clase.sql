@@ -74,6 +74,36 @@ AND
     A1.DNI < A2.DNI;
 
 /*
+ 6. Construya un listado en el que se muestren todos los posibles emparejamientos
+ heterosexuales que se pueden formar entre los alumnos matriculados en la asignatura
+ de código 112 donde la nota de la mujer es mayor que la del hombre y ambos se
+ matricularon en la misma semana. En el listado muestre primero el nombre de la mujer
+ y a continuación el del hombre. Etiquete las columnas como "Ella" y "El"
+ respectivamente. Para el cálculo de la semana use la función de conversión TO_CHAR
+ con ‘IW’. Para el cálculo de la nota numérica use 1 para suspenso, 2 para aprobado, 3
+ para notable, 4 para sobresaliente, 5 para matrícula de honor y 0 para las notas a
+ null
+*/
+SELECT DISTINCT
+    A1.NOMBRE || ' ' ||  A1.APELLIDO1 || ' ' || A1.APELLIDO2 Ella,
+    A2.NOMBRE || ' ' ||  A2.APELLIDO1 || ' ' || A2.APELLIDO2 El
+FROM
+    ALUMNOS A1 JOIN  MATRICULAR M1 ON (A1.DNI = M1.ALUMNO),
+    ALUMNOS A2 JOIN MATRICULAR M2 ON (A2.DNI = M2.ALUMNO)
+WHERE    
+    M1.ASIGNATURA = 112
+AND
+    M2.ASIGNATURA = 112
+AND
+    TO_CHAR(A1.FECHA_PRIM_MATRICULA,'IW') = TO_CHAR(A2.FECHA_PRIM_MATRICULA, 'IW')
+AND
+    A1.GENERO = 'FEM'
+AND
+    A1.GENERO <> A2.GENERO
+AND     
+     DECODE(M1.CALIFICACION, 'MH', 5,'SB', 4,'NT', 3,'AP', 2,'SP', 1,'NP', 0,0) > 
+    DECODE(M2.CALIFICACION, 'MH', 5, 'SB', 4,'NT', 3, 'AP', 2, 'SP', 1, 'NP', 0, 0);
+/*
 
 7. Muestre el nombre, apellidos, nombre de la asignatura y las notas obtenidas por todos
 los alumnos con más de 22 años. Utilice la función DECODE para mostrar la nota como
@@ -100,7 +130,23 @@ WHERE
     TRUNC(MONTHS_BETWEEN(SYSDATE, A.FECHA_NACIMIENTO) / 12) > 22
 ORDER BY 
     A.APELLIDO1 ,A.APELLIDO2,A.NOMBRE;
-    
+
+/* 
+ 8. Nombre y apellidos de los alumnos matriculados en asignaturas impartidas por
+ profesores del departamento de 'Lenguajes y Ciencias de la Computación'. El listado
+ debe estar ordenado alfabéticamente.
+*/
+SELECT
+    A.NOMBRE, A.APELLIDO1, NVL(A.APELLIDO2,' ' ) APELLIDO2
+FROM 
+    MATRICULAR M NATURAL JOIN IMPARTIR I 
+    JOIN  ALUMNOS A ON A.DNI = M.ALUMNO
+    JOIN PROFESORES P ON I.PROFESOR = P.ID
+    JOIN DEPARTAMENTOS D ON P.DEPARTAMENTO = D.CODIGO
+WHERE    
+    UPPER(D.NOMBRE) = 'LENGUAJES Y CIENCIAS DE LA COMPUTACION'
+ORDER BY 2,3,1; 
+
 /*  
 10. Busque una incongruencia en la base de datos, es decir, asignaturas en las que el
 número de créditos teóricos + prácticos no sea igual al número de créditos totales.
@@ -115,6 +161,29 @@ FROM
 WHERE
     NVL(ASI.CREDITOS,0) != NVL(ASI.TEORICOS,0)+NVL(ASI.PRACTICOS,0);
 
+/*
+11.Muestre en orden alfabético los nombres completos de todos los profesores y a su lado 
+el de sus directores si es el caso (si no tenemos constancia de su director de tesis 
+dejaremos este espacio en blanco, pero el profesor debe aparecer en el listado). 
+*/
+SELECT 
+ P1.NOMBRE  || ' ' ||  P1.APELLIDO1 || ' ' || P1.APELLIDO2 Profesores, P2.NOMBRE  || ' ' ||  P2.APELLIDO1 || ' ' || P2.APELLIDO2 Tesis
+FROM 
+    PROFESORES P1
+    LEFT JOIN PROFESORES P2  ON   P1.DIRECTOR_TESIS = P2.ID 
+ORDER BY 1;
+
+/*
+12. Listado con el nombre de todas las asignaturas. En caso de que exista, para cada 
+asignatura se muestra el curso, grupo y nombre y primer apellido del profesor que la 
+imparte.
+*/
+SELECT 
+    A.NOMBRE,NVL(I.CURSO, ' '), NVL(I.GRUPO, ' '),NVL(P.NOMBRE, ' '), NVL(P.APELLIDO1, ' ')
+FROM 
+    ASIGNATURAS A 
+    LEFT JOIN IMPARTIR I ON (A.CODIGO = I.ASIGNATURA)
+    LEFT JOIN PROFESORES P ON (P.ID = I.PROFESOR) 
 
 ------------------------------------------------------------------------------------------------
 --------------------------------------LECCIÓN 7-------------------------------------------------
@@ -196,6 +265,21 @@ GROUP BY
     M.ASIGNATURA
 
 /*
+6. Mostrar la población de cada provincia española: nombre de provincia y suma de
+ hombres y mujeres de todos sus municipios.
+ */
+
+SELECT
+    P.NOMBRE,  SUM(M.HOMBRES + M.MUJERES) POBLACION
+FROM
+    PROVINCIA P JOIN MUNICIPIO M ON (P.CODIGO=M.CPRO)
+GROUP BY P.NOMBRE
+ORDER BY P.NOMBRE;
+
+    
+
+
+/*
 7. Visualizar, por cada departamento, el nombre del profesor más cercano a la jubilación
 (de mayor edad).
 */
@@ -230,7 +314,12 @@ IN
     GROUP BY 
         P.DEPARTAMENTO);
         
-   
+/*
+9. Visualizar para cada asignatura, el alumno de menor edad matriculado en el curso 2020
+2021.
+*/
+
+
 /*
 10. Visualizar el profesor con mayor carga de créditos. Considere la carga de créditos como
 la suma de los créditos de las asignaturas que imparte dicho profesor. Nota: Tenga en
@@ -315,3 +404,25 @@ AND
     )
 ORDER BY 2,3,1;  
 
+/*
+15. Mostrar el listado de profesores que no comparten ninguna de sus asignaturas (dos
+ profesores comparten asignatura si imparten la misma asignatura independientemente
+ del turno).
+ */
+ SELECT 
+    P1.NOMBRE || ' ' || P1.APELLIDO1 || ' ' ||P1.APELLIDO2,
+    P2.NOMBRE || ' ' || P2.APELLIDO1 || ' ' ||P2.APELLIDO2 
+ FROM 
+    PROFESORES P1, PROFESORES P2
+ WHERE 
+    P1.ID < P2.ID 
+AND (P1.ID, P2.ID) NOT IN 
+ 
+ (SELECT I1.PROFESOR, I2.PROFESOR
+  FROM 
+    IMPARTIR I1, IMPARTIR I2
+  WHERE 
+    I1.ASIGNATURA = I2.ASIGNATURA);
+    
+    
+  
