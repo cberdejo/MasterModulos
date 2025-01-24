@@ -71,3 +71,9 @@ pytest-*.xml
 *.swp
 *.swo
 *.swn
+/Modulo6ProcesamientoDatosEscalable/Tareas/ProyectoPythonSpark/data
+/Modulo6ProcesamientoDatosEscalable/Tareas/ProyectosJavaSpark/AddNumbersSpark/src/main/resources
+/Modulo5DataAnalitics/Tareas/Tarea1/data
+/Modulo5DataAnalitics/Temario/Leccion 5/Datasets
+Modulo5DataAnalitics/Temario/Leccion 6/Dataset/Titanic.csv
+/Modulo5DataAnalitics/Temario/Leccion 4/Datasets

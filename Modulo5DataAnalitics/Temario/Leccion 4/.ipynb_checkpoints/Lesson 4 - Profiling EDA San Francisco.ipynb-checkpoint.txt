@@ -1,0 +1,315 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "32b8e0ab",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Set up the parameters for the notebook\n",
+    "csvpathfull = \"C:\\\\Data\\\\Asignaturas\\\\Malaga\\\\San Francisco FD\\\\Fire_Department_and_Emergency_Medical_Services_Dispatched_Calls_for_Service_20241230.csv\"\n",
+    "csvpath1year = \"C:\\\\Data\\\\Asignaturas\\\\Malaga\\\\2024-25\\\\Datasets\\\\San Francisco Dataset\\\\Fire_Department_Calls_for_Service_1year.csv\"\n",
+    "outcsvpath = \"C:\\\\Data\\\\Asignaturas\\\\Malaga\\\\2024-25\\\\Datasets\\\\San Francisco Dataset\\\\Fire_Department_Calls_for_Service_1year.csv\"\n",
+    "# Choose whether to use the full dataset or only the last year\n",
+    "csvpath=csvpath1year"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bf9db0e2-903f-4989-9353-eacc0833b57d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Description:\n",
+    "# The Chief of the Fire Deparment of San Francisco wants to check whether the units are performing as expected\n",
+    "# More specifically, she wishes to know if there have been significant delays in arriving to Scene for the different units \n",
+    "# and if there is any common pattern among them like whether they are related to the location or the priority"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8ddc610d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Let us start reading the CSV\n",
+    "import pandas as pd\n",
+    "\n",
+    "df_csv = pd.read_csv(csvpath, sep=\",\", low_memory=False)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "462a8584",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Check the dataframe's contents\n",
+    "df_csv"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c6e067a7-9c27-4cc0-b1b9-bd083bdc861c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Transform the date into an actual date in order to filter\n",
+    "df_csv['Call Date'] = pd.to_datetime(df_csv['Call Date'],format='%m/%d/%Y')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c62b6f45-bf1f-4e11-96ae-6e56828d7f8d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Filter the data to the last year\n",
+    "df_csv1year = df_csv.query(\"`Call Date` > '01/01/2024'\")\n",
+    "df_csv1year"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "aeb979d6-0ca0-4eca-9dfd-00abb9a24606",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Save the filtered data to a csv file\n",
+    "# df_csv1year['Call Date'] = df_csv1year['Call Date'].dt.strftime('%m/%d/%Y')\n",
+    "# df_csv1year.to_csv(outcsvpath, sep=\",\", index=False)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "72b68f8b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Analyze basic data statistics for data profiling\n",
+    "df_csv1year.describe(include='all')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "feb20f1d",
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "# Note that, according to the above results, data_as_of column has essentially no values. We should remove it\n",
+    "# Furthermore, note that not all columns appear due to the size of the dataset\n",
+    "# If we wish to perform more in-depth profiling we should remove other unnecessary columns to avoid overloading the report\n",
+    "# However, we should keep at least those columns that are important for the analysis (objectives)\n",
+    "df_csv1year=df_csv1year.drop(['Original Priority','Box','Transport DtTm',\n",
+    "                              'Hospital DtTm','Fire Prevention District', 'Zipcode of Incident', \n",
+    "                              'Supervisor District','case_location','Battalion',\n",
+    "                              'Watch Date', 'Entry DtTm', 'Incident Number', 'Call Type Group',\n",
+    "                              'data_as_of','RowID','data_loaded_at'],axis=1) "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "53f62d31-cbd5-4611-a4a9-166fb986419c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df_csv1year.describe(include='all')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e5987e63-f7a0-4277-adb6-c79c48025263",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Despite showing NaN, we can calculate the number of unique call numbers\n",
+    "print(\"Call Number values: \", df_csv1year['Call Number'].nunique())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d7bc5820-6033-40cc-b4a3-97984179b540",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Since we wish to analyze in depth the time that units take to arrive to scene we can filter all rows that do not have On Scene DtTm\n",
+    "df_csv1year = df_csv1year[df_csv1year['On Scene DtTm'].notnull()]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6250b471",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# We can also generate an overall data profiling using ydata_profiling library\n",
+    "# Be mindful about the number of columns as it can cause the library to take a long time to generate the report\n",
+    "# If the dataset is too large, we can use minimal=True to speed up the report generation at the cost of missing some information\n",
+    "# Other alternatives, such as interaction targets to be analyzed can be configured as indicated in the documentation (https://docs.profiling.ydata.ai/latest/features/big_data/)\n",
+    "\n",
+    "from ydata_profiling import ProfileReport\n",
+    "report = ProfileReport(df_csv1year, title=\"San Francisco FD Profiling\", correlations={\"auto\": {\"calculate\": True}}, minimal=True)\n",
+    "report"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "52c15748",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# After finishing the data profiling let us start with the Exploratory Data Analysis\n",
+    "# Let us first calculate the average time that each unit takes to arrive to scene\n",
+    "df_csv1year['TimeReceivedOnScene'] = pd.to_datetime(df_csv1year['On Scene DtTm'],format='%m/%d/%Y %I:%M:%S %p') - pd.to_datetime(df_csv1year['Received DtTm'],format='%m/%d/%Y %I:%M:%S %p')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "260bafc0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Now we will use the calculated time to check the minimum, maximum and average values\n",
+    "print(\"Time to Scene min: \", df_csv1year['TimeReceivedOnScene'].min())\n",
+    "print(\"Time to Scene average: \", df_csv1year['TimeReceivedOnScene'].mean())\n",
+    "print(\"Time to Scene max: \", df_csv1year['TimeReceivedOnScene'].max())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9b83a5d2-6368-42a6-9aed-551f3674464e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# So we have (i) units that arrive before anyone calls; (ii) units that take almost a day to arrive; (iii) an average time of 11:20 minutes to arrive\n",
+    "# Let us check the times per unit for the fastest and slowest units according to their average\n",
+    "print('Fastest units')\n",
+    "df_csv1year.groupby(['Unit ID','Unit Type'])['TimeReceivedOnScene'].agg([\"min\",\"mean\",\"max\"]).sort_values(by=['mean'], ascending=[True]).head(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "da1e3592-79f1-4874-ba48-af2a1f99059f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "print('Slowest units')\n",
+    "df_csv1year.groupby(['Unit ID','Unit Type'])['TimeReceivedOnScene'].agg([\"min\",\"mean\",\"max\"]).sort_values(by=['mean'], ascending=[True]).tail(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "920511ed-31bf-4e4e-885f-c313470b5955",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Therefore, we have identified several units that take an abnormal time to arrive to Scene, with up to 8 hours for CBRNE\n",
+    "# Since we have obtained negative values let us double check if it is a data problem or a calculation problem\n",
+    "df_csv1year[df_csv1year.TimeReceivedOnScene <= pd.to_timedelta('0')]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f267ecb9-d0b1-4d84-9857-b02179f95d1c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Let us remove the anomalies and re-check the fastest units\n",
+    "df_csv1yearNo0Time=df_csv1year[df_csv1year.TimeReceivedOnScene > pd.to_timedelta('0')]\n",
+    "print('Fastest units')\n",
+    "df_csv1yearNo0Time.groupby(['Unit ID','Unit Type'])['TimeReceivedOnScene'].agg([\"min\",\"mean\",\"max\"]).sort_values(by=['mean'], ascending=[True]).head(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "95bd6b4a-d138-4315-8ad7-549add611679",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Being aware of abnormal times let us check other dimensions, starting with the City\n",
+    "df_csv1yearNo0Time.groupby(['City'])['TimeReceivedOnScene'].agg([\"min\",\"mean\",\"max\"]).sort_values(by=['mean'], ascending=[True])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6c4cdefa-a054-4213-8a15-de391bbaa72f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# As we can see, the wide range of times happen in several cities, with the notable anomaly of max time in San Francisco\n",
+    "# and the average time for Daly City \n",
+    "# Let us check the times per neighborhood, focusing on the worst times\n",
+    "df_csv1yearNo0Time.groupby(['Neighborhooods - Analysis Boundaries'])['TimeReceivedOnScene'].agg([\"min\",\"mean\",\"max\"]).sort_values(by=['max'], ascending=[False]).head(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "018b749c-5fae-4939-b755-c88231c05a74",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# There are several neighborhoods in which the FD units have taken an abnormal time to arrive, most notable Hayes Valley and Sunset/Parkside\n",
+    "# Let us finally check how the mean arrival time relates to the priority of the call\n",
+    "df_csv1yearNo0Time.groupby(['Priority'])['TimeReceivedOnScene'].agg([\"min\",\"mean\",\"max\"]).sort_values(by=['max'], ascending=[False])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "271cca18-f3ff-4038-84fe-978e4cae2f6a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# We can conclude that, while the mean time to arrive does follow the priority order (3 is emergency, 2 non-emergency),\n",
+    "# The max time is completely abnormal\n",
+    "# Moreover, we have certain values (I,1,E,A) that are not directly documented in the data dictionary\n",
+    "# Finally, the mean is way too high for I and priotity 1 calls. It is also notable that for (A)lerts, the mean time is almost 1 hour to arrive"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "profiling",
+   "language": "python",
+   "name": "profiling"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
