@@ -14,3 +14,12 @@
 	url = https://github.com/cberdejo/OracleSqlConnectionExample
 
     
+[submodule "Modulo16Lab/Cli-Crud-Music"]
+	path = Modulo16Lab/Cli-Crud-Music
+	url = https://github.com/cberdejo/Cli-Crud-Music
+[submodule "Modulo16Lab/Url-Shortening-app-Fastapi"]
+	path = Modulo16Lab/Url-Shortening-app-Fastapi
+	url = https://github.com/cberdejo/url_shortening_api
+[submodule "Modulo16Lab/project-mgmt-crud"]
+	path = Modulo16Lab/project-mgmt-crud
+	url = https://github.com/cberdejo/company-s-projects-crud
