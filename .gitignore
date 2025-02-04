@@ -77,3 +77,5 @@ pytest-*.xml
 /Modulo5DataAnalitics/Temario/Leccion 5/Datasets
 Modulo5DataAnalitics/Temario/Leccion 6/Dataset/Titanic.csv
 /Modulo5DataAnalitics/Temario/Leccion 4/Datasets
+/Modulo6ProcesamientoDatosEscalable/Tareas/notebooks/data
+/Modulo7CasoDeUsoProcesamientoDatos/notebooks/sanfrancisco-crime-V1/data
