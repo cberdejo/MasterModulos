@@ -208,18 +208,22 @@ java Ejemplo
     <li><strong>✅ Flask Example To-Do List:</strong> API REST desarrollada con Flask que permite gestionar listas de tareas.</li>
     <li><strong>📊 Project Mgmt CRUD:</strong> Proyecto CRUD basado en consola para la creación y gestión de proyectos.</li>
     <li><strong>🎨 Streamlit Example:</strong> Introducción a la librería Streamlit para crear dashboards interactivos.</li>
-    <li><strong>🔗 URL Shortening App (FastAPI):</strong> API que acorta URLs al estilo de servicios como Bit.ly y permite redireccionamientos.</li>
+    <li><strong>🔑 Key Value Mgmt app (FastAPI):</strong></li> Una api sencilla para insertar, consultar, eliminar claves valores usando Pydantic, Redis, Ruff.
+    <li><strong>🔗 URL Shortening App (FastAPI):</strong> API que acorta URLs al estilo de servicios como Bit.ly y permite redireccionamientos. Usa Redis y Ruff.</li>
 </ul>
 
 <h2 id="teoria">📖 Teoría</h2>
 <p>📚 Los siguientes documentos complementan el aprendizaje práctico con conceptos avanzados:</p>
 
+<h3> Python </h3>
 <ul>
     <li><strong>📌 Lecturas avanzadas:</strong> <a href="https://blog.phylum.io/phylum-discovers-another-attack-on-pypi">Ataques en PyPI</a>, <a href="https://refactoring.guru/es/design-patterns">Patrones de diseño</a>, <a href="https://sourcery.ai/blog/python-best-practices/">Buenas prácticas en Python</a>, <a href="https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html">Comparación de lenguajes de programación</a>.</li>
     <li><strong>⚡ Concurrencia vs Paralelismo:</strong> Diferencias entre tareas CPU-bound e I/O-bound, el impacto del GIL en Python y estrategias de optimización con <code>threading</code> y <code>multiprocessing</code>.</li>
     <li><strong>📚 Lecturas recomendadas:</strong> <a href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a>, <a href="https://learnxinyminutes.com/docs/python/">Learn X in Y minutes (Python)</a>, <a href="https://docs.python-guide.org/">The Hitchhiker’s Guide to Python</a>.</li>
     <li><strong>📦 Envío de código Python:</strong> Guía sobre <a href="https://setuptools.pypa.io/en/latest/userguide/quickstart.html">empaquetado con setuptools</a>, publicación en PyPI y mejores prácticas en estructuras de proyectos.</li>
 </ul>
+<h3>Curl </h3>
+Ejemplos de comando para uso de curl
 
 <h2 id="conclusion">🚀 Conclusión</h2>
 <p>Este módulo permite aplicar y profundizar en diversas áreas del desarrollo en Python, combinando teoría y práctica en proyectos funcionales y relevantes en la industria.</p>
