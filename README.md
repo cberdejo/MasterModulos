@@ -210,7 +210,7 @@ java Ejemplo
     <li><strong>🎨 Streamlit Example:</strong> Introducción a la librería Streamlit para crear dashboards interactivos.</li>
     <li><strong>🔑 Key Value Mgmt app (FastAPI):</strong></li> Una api sencilla para insertar, consultar, eliminar claves valores usando Pydantic, Redis, Ruff.
     <li><strong>🔗 URL Shortening App (FastAPI):</strong> API que acorta URLs al estilo de servicios como Bit.ly y permite redireccionamientos. Usa Redis y Ruff.</li>
-</ul>
+</ul>   
 
 <h2 id="teoria">📖 Teoría</h2>
 <p>📚 Los siguientes documentos complementan el aprendizaje práctico con conceptos avanzados:</p>
