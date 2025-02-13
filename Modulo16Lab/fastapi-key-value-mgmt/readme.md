@@ -49,6 +49,8 @@ Use
 python ./src/app.py
 ```
 
+## Client
+There is a client as en example of how to use de api using the "requests" package
 
 ## LICENSE: MIT License file.
 License
