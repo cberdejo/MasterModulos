@@ -1,3 +1,4 @@
+
 CREATE TABLE Dates (
     idDate NUMBER(10) PRIMARY KEY,
     year NUMBER(10) NOT NULL,
@@ -42,7 +43,7 @@ CREATE TABLE Customer (
 );
 
 CREATE TABLE Fact_Order (
-    idFact_order NUMBER(10) PRIMARY KEY,
+    idFact_order NUMBER(10),
     Product_idProduct NUMBER(10) NOT NULL,
     Date_idship NUMBER(10) NOT NULL,
     Date_idOrder NUMBER(10) NOT NULL,
@@ -56,6 +57,14 @@ CREATE TABLE Fact_Order (
     profit BINARY_DOUBLE,
     shipping_cost BINARY_DOUBLE,
     preparation_time BINARY_DOUBLE,
+    CONSTRAINT pk_Fact_Order PRIMARY KEY (
+        Product_idProduct,
+        Date_idship,
+        Date_idOrder,
+        Shipment_idShipment,
+        Priority_idPriority,
+        Customer_idCustomer
+    ),
     CONSTRAINT fk_Product FOREIGN KEY (Product_idProduct) REFERENCES Product(idProduct),
     CONSTRAINT fk_DateShip FOREIGN KEY (Date_idship) REFERENCES DATES(idDate),
     CONSTRAINT fk_DateOrder FOREIGN KEY (Date_idOrder) REFERENCES DATES(idDate),
