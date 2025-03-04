@@ -1,24 +1,31 @@
 from fastapi import APIRouter, HTTPException, Request
 from interfaces import LogTime, Project
-from service import get_project, create_project_service,delete_project_service, list_all_projects_service, log_time_service
+from service import  create_project_service,delete_project_service, get_project_by_name_service, list_all_projects_service,  update_time_service
 
 router = APIRouter()
 
+@router.get("/api/v1/health")
+async def health_check():
+    return {"status": "ok"}
 
 @router.post("/api/v1/{project_name}")
 async def create_project(request: Request, project_name: str):
     db_connection = request.app.state.db
+    print(project_name)
+    if not project_name.strip():
+        raise HTTPException(status_code=500, detail="Project name cannot be empty")
 
-    if get_project(connection=db_connection, project_name=project_name):
+    if get_project_by_name_service(connection=db_connection, project_name=project_name):
         raise HTTPException(status_code=418, detail="The project already exists")
+    
     create_project_service(db_connection,project_name=project_name)
     return {"message": "Project created successfully"}
    
  
-@router.post("/api/v1/{project_name}/log")
+@router.put("/api/v1/{project_name}/log")
 async def log_time(request: Request, project_name: str, time: LogTime):
     db_connection = request.app.state.db
-    log_time_service(db_connection, project_name=project_name, time=time)
+    update_time_service(db_connection, project_name=project_name, new_time=time)
     return {"message": "Time logged successfully"}
 
 

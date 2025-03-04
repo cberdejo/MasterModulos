@@ -1,9 +1,29 @@
-# Project Title
+# API FOR PROJECT MANAGEMENT WITH STREAMLIT
 
-## Description
+## Table of Contents
+
+[Frontend](#frontend)
+
+[Backend](#backend)
+
+## Frontend
+
+### Description
+
+### Getting Started
+
+### Streamlit
+
+```bash
+$ streamlit run main.py
+``` 
+## Backend
+
+### Description
 
 
-## Getting Started
+### Getting Started
+
 
 ### MySQL
 
