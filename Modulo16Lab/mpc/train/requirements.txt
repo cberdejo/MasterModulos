@@ -1,5 +1,0 @@
-pandas
-matplotlib
-scikit_learn
-minio
-ruff

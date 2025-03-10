@@ -1,0 +1,7 @@
+pandas
+minio
+ruff
+fastapi
+sklearn
+matplotlib
+seaborn
