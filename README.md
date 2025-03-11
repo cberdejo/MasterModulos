@@ -379,6 +379,7 @@ Se pueden encontrar documentos que sirven como primera aproximación al tema de 
     <li><strong>🎨 Streamlit Example:</strong> Introducción a la librería Streamlit para crear dashboards interactivos.</li>
     <li><strong>🔑 Key Value Mgmt app (FastAPI):</strong></li> Una api sencilla para insertar, consultar, eliminar claves valores usando Pydantic, Redis, Ruff.
     <li><strong>🔗 URL Shortening App (FastAPI):</strong> API que acorta URLs al estilo de servicios como Bit.ly y permite redireccionamientos. Usa Redis y Ruff.</li>
+    <li> <strong>📱 Mobile Price Calification: </strong>Es una Api que carga modelos de machine learning de <code>Minio</code> y es capaz de entrenar un modelo utilizando <code>Random Forest Classifier</code> para predecir la categoría de precio de un conjunto de datos de teléfonos móviles. Se realiza un análisis exploratorio, optimización de hiperparámetros mediante <code>GridSearchCV</code>, evaluación del modelo y guardado del modelo entrenado en <code>Minio</code>.</li>
 </ul>   
 
 <h2 id="teoria">📖 Teoría</h2>
@@ -390,6 +391,7 @@ Se pueden encontrar documentos que sirven como primera aproximación al tema de 
     <li><strong>⚡ Concurrencia vs Paralelismo:</strong> Diferencias entre tareas CPU-bound e I/O-bound, el impacto del GIL en Python y estrategias de optimización con <code>threading</code> y <code>multiprocessing</code>.</li>
     <li><strong>📚 Lecturas recomendadas:</strong> <a href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a>, <a href="https://learnxinyminutes.com/docs/python/">Learn X in Y minutes (Python)</a>, <a href="https://docs.python-guide.org/">The Hitchhiker’s Guide to Python</a>.</li>
     <li><strong>📦 Envío de código Python:</strong> Guía sobre <a href="https://setuptools.pypa.io/en/latest/userguide/quickstart.html">empaquetado con setuptools</a>, publicación en PyPI y mejores prácticas en estructuras de proyectos.</li>
+   
 </ul>
 <h3>Curl </h3>
 Ejemplos de comando para uso de curl
